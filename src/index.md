@@ -1,0 +1,18 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+
+layout: home
+---
+
+Welcome to my site!
+
+I write about topics that I care about and believe are important. I try to bring my authentic voice every time I set out to type, and I strive to share a viewpoint that gets you thinking and inspired to dig deeper.
+
+----
+{: .my-6}
+
+# Latest Articles
+{: .mb-5 .title .has-text-centered}
+
+{% assign posts = site.posts | slice: 0, 10 %}
+{% render "bulmatown/collection", collection: posts, metadata: site.metadata %}
