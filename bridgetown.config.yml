@@ -21,3 +21,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: pretty
 
 timezone: America/Los_Angeles
+
+pagination:
+  enabled: true

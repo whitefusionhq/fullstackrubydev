@@ -1,15 +1,11 @@
 ---
 layout: page
-title: Posts
-permalink: /posts/
+title: Articles
+pagination:
+  enabled: true
 ---
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+{% assign posts = paginator.documents %}
+{% render "bulmatown/collection", collection: posts, metadata: site.metadata %}
 
-If you have a lot of posts, you may want to consider adding [pagination](https://www.bridgetownrb.com/docs/content/pagination)!
+{% render "bulmatown/pagination", paginator: paginator %}
