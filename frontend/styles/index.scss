@@ -2,10 +2,14 @@ $primary: #8a1024;
 
 $inverse-text: #f5d0d6;
 
+$card-content-padding: 1.5rem 0.75rem;
+
 $content-blockquote-padding: 2em 1.5em 2em 2.5em;
 $content-blockquote-background-color: darken($primary, 7%);
 $content-blockquote-text-color: $inverse-text;
 $content-blockquote-border-left: 10px solid $primary;
+
+$title-weight: 900 !important;
 
 @import "~bulmatown/frontend/styles";
 
@@ -60,10 +64,6 @@ div.highlight {
 }
 body.post .hero {
   background-position: center center;
-}
-
-body.home .hero .title {
-  font-weight: 900;
 }
 
 footer.footer {

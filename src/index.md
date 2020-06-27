@@ -15,7 +15,7 @@ I write about topics that I care about and believe are important. I try to bring
 {: .my-6}
 
 # Latest Articles
-{: .mb-5 .title .has-text-centered}
+{: .mb-5 .title .has-text-centered .has-text-weight-extrabold}
 
 {% assign posts = site.posts | slice: 0, 4 %}
 {% render "bulmatown/collection", collection: posts, metadata: site.metadata %}
