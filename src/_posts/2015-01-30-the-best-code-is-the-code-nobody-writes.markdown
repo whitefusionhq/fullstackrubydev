@@ -6,7 +6,6 @@ categories:
 - The Art of Code
 layout: post
 author: jared
-inline_cover: "/assets/the-best-code.jpg"
 ---
 
 _Update 2: Wow! I didn't expect this to make the rounds on Twitter. Thanks everyone for the links!_

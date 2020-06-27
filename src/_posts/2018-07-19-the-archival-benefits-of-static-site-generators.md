@@ -11,7 +11,7 @@ rainbow_hero: true
 ---
 
 **2020 Update:** While I'm all in now on Bridgetown, a modern fork of Jekyll, I'm leaving this up since you can apply many of these same principles to Bridgetown as well.
-{:.mb-6}
+{:.mb-6 .mx-4}
 
 I've been on a nostalgia trip lately, poring over old snapshots of various sites and blogs I worked on in the past (stretching all the way back to 1996). [Thank goodness for the Wayback Machine!](https://jaredwhite.com/articles/thank-goodness-for-the-wayback-machine) But it's gotten me thinking about the impermanence of the digital artifacts we create all the time as designers, developers, and content authors.
 

@@ -10,7 +10,7 @@ image_hero: "/images/posts/depths.jpg"
 ---
 
 **2020 Update:** While I'm all in now on Bridgetown, a modern fork of Jekyll, I'm leaving this up since you can apply many of these same principles to Bridgetown as well.
-{:.mb-6}
+{:.mb-6 .mx-4}
 
 As part of a large redesign of my personal website and blog at [jaredwhite.com](https://jaredwhite.com), I was able to put Jekyll through its paces in some interesting ways. The following is a collection of three nifty Jekyll techniques you might not have heard about before. (At least I hadn't…these all came about through copious trial and error. My pain is your gain!)
 

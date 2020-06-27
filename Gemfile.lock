@@ -39,7 +39,7 @@ GEM
       bridgetown-core (= 0.15.0)
     bridgetown-quick-search (1.0.3)
       bridgetown (>= 0.15.0.beta1, < 2.0)
-    bulmatown (1.0.4)
+    bulmatown (1.0.5)
       bridgetown (>= 0.15, < 2.0)
       bridgetown-quick-search (~> 1.0)
     colorator (1.1.0)
