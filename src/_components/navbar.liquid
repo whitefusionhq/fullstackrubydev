@@ -6,32 +6,24 @@
   {% endwith %}
   {% with items_start %}
     <a class="navbar-item" href="/">Home</a>
+    <a class="navbar-item" href="/posts">Articles</a>
     <a class="navbar-item" href="/about">About</a>
     <div class="navbar-item has-dropdown is-hoverable">
       <a class="navbar-link" href="/topics">
         Topics
       </a>
       <div class="navbar-dropdown is-boxed">
-        <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
-          Overview
-        </a>
-        <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/">
-          Modifiers
-        </a>
-        <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
-          Columns
-        </a>
-        <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
-          Layout
-        </a>
-        <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
-          Form
-        </a>
+        {% assign sorted_categories = categories | sort %}
+        {% for category in sorted_categories %}
+          <a class="navbar-item" href="/topics/{{ category[0] | slugify }}">
+            {{ category[0] }}
+          </a>
+        {% endfor %}
         <hr class="navbar-divider">
         <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
           Elements
         </a>
-        <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+        <a class="navbar-item" href="https://bulma.io/documentation/components/breadcrumb/">
           Components
         </a>
       </div>

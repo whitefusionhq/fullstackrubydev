@@ -24,3 +24,10 @@ timezone: America/Los_Angeles
 
 pagination:
   enabled: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image_hero: https://res.cloudinary.com/mariposta/image/upload/w_2048,h_1024,c_fill,g_north,q_65/IMG_5232_srqhvl.jpg
+    

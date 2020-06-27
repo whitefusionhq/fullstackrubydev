@@ -1,5 +1,77 @@
-//$text: #444;
+$primary: #8a1024;
 
-//$theme_variation: rust;
+$inverse-text: #f5d0d6;
 
-@import "~bulmatown/frontend/styles"
+$content-blockquote-padding: 2em 1.5em 2em 2.5em;
+$content-blockquote-background-color: darken($primary, 7%);
+$content-blockquote-text-color: $inverse-text;
+$content-blockquote-border-left: 10px solid $primary;
+
+@import "~bulmatown/frontend/styles";
+
+.content {
+  blockquote {
+    color: $content-blockquote-text-color;
+    box-shadow: inset calc(1rem + 10px) 0px 0px -10px white, inset 0px 0px 60px 10px darken($primary, 10%);
+    margin-top: 2rem;
+    padding: 2em 1.5em 2em 2.5em;
+    margin-left: calc(-1rem - 10px);
+    font-weight: 500;
+    font-size: 1.1em;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    a {
+      color: white;
+    }
+  }
+  &.e-content h3 {
+    &:not(:first-child) {
+      margin-top: 3rem;
+    }
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    margin-left: calc(-1rem - 10px);
+    padding-left: 1rem;
+    border-left: $content-blockquote-border-left;
+  }
+}
+.content p:not(:last-child), .content dl:not(:last-child), .content ol:not(:last-child), .content ul:not(:last-child), .content pre:not(:last-child), .content table:not(:last-child) {
+  margin-bottom: 1.25em;
+}
+pre.highlight {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.highlight {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.navbar-brand {
+  font-weight: 900;
+}
+
+.hero {
+  background-position: center 75%;
+}
+body.post .hero {
+  background-position: center center;
+}
+
+body.home .hero .title {
+  font-weight: 900;
+}
+
+footer.footer {
+  color: $inverse-text;
+  a, strong, .logo {
+    color: white;
+  }
+  .logo {
+    font-weight: 900;
+  }
+}

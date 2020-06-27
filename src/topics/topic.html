@@ -1,0 +1,11 @@
+---
+layout: page
+title: "Topic: :prototype-term-titleize"
+prototype:
+  term: category
+---
+
+{% assign posts = paginator.documents %}
+{% render "bulmatown/collection", collection: posts, metadata: site.metadata %}
+
+{% render "bulmatown/pagination", paginator: paginator %}

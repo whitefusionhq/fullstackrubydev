@@ -4,12 +4,12 @@
     {% render "head", metadata: site.metadata, title: page.title %}
   </head>
   <body class="{{ page.layout }} {{ page.page_class }}">
-    {% render "navbar", metadata: site.metadata %}
+    {% render "navbar", metadata: site.metadata, categories: site.categories %}
 
     <main>
       {{ content }}
     </main>
 
-    {% render "footer", url: site.url, metadata: site.metadata %}
+    {% render "footer", url: site.url, url: site.url, metadata: site.metadata %}
   </body>
 </html>
