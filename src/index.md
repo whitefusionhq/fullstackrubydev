@@ -2,6 +2,11 @@
 layout: home
 ---
 
+## _Under Construction! Come back soon =)_
+
+----
+{: .my-5}
+
 Welcome to my site!
 
 I write about topics that I care about and believe are important. I try to bring my authentic voice every time I set out to type, and I strive to share a viewpoint that gets you thinking and inspired to dig deeper.
