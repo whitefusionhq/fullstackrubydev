@@ -5,10 +5,10 @@
 # in the templates via {{ site.metadata.myvariable }}.
 
 title: RUBY3.dev
-tagline: It was the third age of Ruby…
+tagline: It was dawn of the third age of Ruby…
 email: ruby@whitefusion.studio
 description: >- # this means to ignore newlines until "baseurl:"
-  It was the third age of Ruby… Welcome to the future.
+  It was dawn of the third age of Ruby… <br/><br/>=> Hashrocket into the future every week and become a wiz at this delightful and powerful language.
 
 twitter: _whitefusion
 

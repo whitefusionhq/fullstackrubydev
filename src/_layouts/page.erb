@@ -1,0 +1,11 @@
+---
+layout: bulmatown/page
+---
+
+<%= yield %>
+
+<div class="my-5">&nbsp;</div>
+
+<% markdownify do %>
+  <%= liquid_render "sponsor" %>
+<% end %>

@@ -14,11 +14,11 @@ Here's the final code example:
 ```erb
 <% # tilt_dsl_template.erb %>
 
-{% code_sample tilt_dsl_template.erb %}
+{% code_sample tilt/tilt_dsl_template.erb %}
 ```
 
 ```ruby
 # tilt_dsl_example.rb
 
-{% code_sample tilt_dsl_example.rb %}
+{% code_sample tilt/tilt_dsl_example.rb %}
 ```

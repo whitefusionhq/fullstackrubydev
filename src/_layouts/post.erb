@@ -2,19 +2,23 @@
 layout: bulmatown/post
 ---
 
-{{ content }}
+<%= yield %>
 
-{% render "subscribe" %}
+<%= liquid_render "subscribe" %>
 
 <hr class="my-6" />
 
 <h1 class="mb-6 title has-text-centered">Other Recent Articles</h1>
 
-{% assign posts = page.related_posts | slice: 0, 2 %}
-{% render "bulmatown/collection", collection: posts, metadata: site.metadata %}
+<% posts = page.related_posts[0...2] %>
+<%= liquid_render "bulmatown/collection", collection: posts, metadata: site.metadata %>
 
-{% if site.posts.size > 6 %}
+<% if page.related_posts.size > 2 %>
   <p class="mt-6 has-text-centered"><a href="/articles" class="button is-primary is-outlined is-small"><span>More This Way </span> <span class="icon"><i class="fa fa-arrow-right"></i></span></a></p>
-{% endif %}
+<% end %>
 
-{% render "sponsor" %}
+<div class="my-5">&nbsp;</div>
+
+<% markdownify do %>
+  <%= liquid_render "sponsor" %>
+<% end %>

@@ -3,3 +3,8 @@ layout: bulmatown/page
 ---
 
 {{ content }}
+
+{% capture sponsorship %}
+{% render "sponsor" %}
+{% endcapture %}
+{{ sponsorship | markdownify }}

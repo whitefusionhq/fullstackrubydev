@@ -1,38 +1,32 @@
 $primary: #8a1024;
 
-$inverse-text: #f5d0d6;
+$inverse-link: #f5d0d6;
 
 $card-content-padding: 1.5rem 0.75rem;
 
+$content-heading-weight: 900;
+
 $content-blockquote-padding: 2em 1.5em 2em 2.5em;
 $content-blockquote-background-color: darken($primary, 7%);
-$content-blockquote-text-color: $inverse-text;
+$content-blockquote-text-color: white;
 $content-blockquote-border-left: 10px solid $primary;
+
+$code-background: #fcf9f0;
+.has-background-code {
+  background-color: $code-background;
+}
 
 $title-weight: 900 !important;
 
 $family-monospace: ui-monospace, monospace;
 $family-serif: ui-serif, Georgia, serif;
 
-/*
-BLOCKQUOTE
-
-font-weight: 400;
-font-size: 1.2em;
-border-top-right-radius: 6px;
-border-bottom-right-radius: 6px;
-font-family: ui-serif, Georgia, serif;
-font-style: italic;
-line-height: 1.35;
-text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
-*/
-
 @import "~bulmatown/frontend/styles";
 
 .content {
   blockquote {
     color: $content-blockquote-text-color;
-    box-shadow: 0px 13px 20px rgba(0,0,0,0.15), inset calc(1rem + 10px) 0px 0px -10px white, inset 0px 0px 60px 10px darken($primary, 10%);
+    box-shadow: inset calc(1rem + 10px) 0px 0px -10px white, inset 0px 0px 60px 10px darken($primary, 10%);
     margin-top: 2rem;
     padding: 2em 1.5em 2em 2.5em;
     margin-left: calc(-1rem - 10px);
@@ -40,7 +34,7 @@ text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
     font-size: 1.2em;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
-    line-height: 1.35;
+    line-height: 1.45;
     font-style: italic;
     font-family: $family-serif;
     text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
@@ -48,7 +42,8 @@ text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
       margin-bottom: 2rem;
     }
     a {
-      color: white;
+      color: $inverse-link;
+      font-weight: 500;
     }
   }
   &.e-content h3 {
@@ -72,7 +67,12 @@ pre.highlight {
 }
 div.highlight {
   margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
+  border: 1px dashed $inverse-link;
+  box-shadow: 0px 13px 18px rgba(0,0,0,0.1);
+}
+div.highlighter-rouge + div.highlighter-rouge > div.highlight {
+  margin-top: -0.75em;
 }
 
 .navbar .navbar-brand {
@@ -91,7 +91,7 @@ article .author {
 }
 
 footer.footer {
-  color: $inverse-text;
+  color: $inverse-link;
   a, strong, .logo {
     color: white;
   }

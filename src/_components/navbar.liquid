@@ -1,7 +1,7 @@
 {% rendercontent "bulmatown/navbar", class: "is-dark" %}
   {% with logo %}
     <a class="navbar-item" href="/">
-      {{ metadata.title }}
+      <img src="/images/ruby.svg" style="width: 20px; filter: drop-shadow(0px 0px 4px #ffffcc)" class="mr-2" /> {{ metadata.title }}
     </a>
   {% endwith %}
   {% with items_start %}
