@@ -8,20 +8,28 @@
       matz
     </p>
 
-    <p>Subscribe to receive a personalized tip you can apply directly to your Ruby site or application each week:</p>
+    <p>Subscribe to receive a timely tip you can apply directly to your Ruby site or application each week:</p>
     
-    <form>
+    <form action="https://app.convertkit.com/forms/1766345/subscriptions" method="post">
+      <div class="field">
+        <div class="control has-icons-left">
+          <input name="fields[first_name]" class="input" type="text" placeholder="Your first name">
+          <span class="icon is-small is-left">
+            <i class="fa fa-user-circle"></i>
+          </span>
+        </div>
+      </div>
       <div class="field has-addons">
         <div class="control has-icons-left" style="flex-grow: 1">
-          <input class="input" type="email" placeholder="Email">
+          <input name="email_address" class="input" type="email" placeholder="Your email address">
           <span class="icon is-small is-left">
             <i class="fa fa-envelope"></i>
           </span>
         </div>
         <div class="control">
-          <a class="button is-primary">
+          <button class="button is-primary">
             Subscribe
-          </a>
+          </button>
         </div>
       </div>
     </form>

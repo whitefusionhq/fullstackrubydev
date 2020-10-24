@@ -1,19 +1,20 @@
 ---
 layout: default
+render_with_liquid: false
 ---
 
-{% assign home_title = "Welcome to " | append: site.metadata.title %}
-{% render "bulmatown/hero_wrapper",
+{% home_title = "Welcome to #{site.metadata.title}" %}
+{{ liquid_render "bulmatown/hero_wrapper",
     title: home_title,
     subtitle: site.metadata.tagline,
     page: page,
     metadata: site.metadata
-%}
+}}
 
 <section class="section">
   <div class="container">
     <div class="content">
-      {{ content }}
+      {%= yield %}
     </div>
   </div>
 </section>

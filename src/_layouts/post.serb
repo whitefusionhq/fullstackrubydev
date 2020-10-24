@@ -1,24 +1,25 @@
 ---
 layout: bulmatown/post
+render_with_liquid: false
 ---
 
-<%= yield %>
+{%= yield %}
 
-<%= liquid_render "subscribe" %>
+{{ liquid_render "subscribe" }}
 
 <hr class="my-6" />
 
 <h1 class="mb-6 title has-text-centered">Other Recent Articles</h1>
 
-<% posts = page.related_posts[0...2] %>
-<%= liquid_render "bulmatown/collection", collection: posts, metadata: site.metadata %>
+{% posts = page.related_posts[0...2] %}
+{{ liquid_render "bulmatown/collection", collection: posts, metadata: site.metadata }}
 
-<% if page.related_posts.size > 2 %>
+{% if page.related_posts.size > 2 %}
   <p class="mt-6 has-text-centered"><a href="/articles" class="button is-primary is-outlined is-small"><span>More This Way </span> <span class="icon"><i class="fa fa-arrow-right"></i></span></a></p>
-<% end %>
+{% end %}
 
 <div class="my-5">&nbsp;</div>
 
-<% markdownify do %>
-  <%= liquid_render "sponsor" %>
-<% end %>
+{% markdownify do %}
+  {{ liquid_render "sponsor" }}
+{% end %}

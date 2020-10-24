@@ -23,6 +23,16 @@ $family-serif: ui-serif, Georgia, serif;
 
 @import "~bulmatown/frontend/styles";
 
+.ruby-icon {
+  filter: drop-shadow(0px 0px 4px #ffffccaa);
+  .navbar & {
+    width: 20px;
+  }
+  .footer & {
+    width: 18px;
+  }
+}
+
 .content {
   blockquote {
     color: $content-blockquote-text-color;
@@ -81,6 +91,12 @@ div.highlighter-rouge + div.highlighter-rouge > div.highlight {
 
 .hero {
   background-position: center 75%;
+
+  @include tablet {
+    .title.is-spaced + .subtitle {
+      margin-top: 3rem;
+    }
+  }
 }
 body.post .hero {
   background-position: center center;

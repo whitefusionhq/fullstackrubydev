@@ -7,6 +7,7 @@ layout: post
 author: jared
 image: /images/posts/hello-jekyll.jpg
 image_hero: /images/posts/hello-jekyll.jpg
+published: false
 ---
 
 Here's the final code example:

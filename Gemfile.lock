@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.0.3.3)
+    activesupport (6.0.3.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
@@ -9,7 +9,7 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    amazing_print (1.2.1)
+    amazing_print (1.2.2)
     bridgetown (0.17.1)
       bridgetown-builder (= 0.17.1)
       bridgetown-core (= 0.17.1)
@@ -46,14 +46,15 @@ GEM
       bridgetown (>= 0.15.0.beta1, < 2.0)
     bridgetown-seo-tag (3.0.5)
       bridgetown (>= 0.15.0, < 2.0)
-    bulmatown (1.0.6)
+    bulmatown (1.0.7)
       bridgetown (>= 0.15, < 2.0)
       bridgetown-quick-search (~> 1.0)
     colorator (1.1.0)
     concurrent-ruby (1.1.7)
     erubi (1.9.0)
-    faraday (1.0.1)
+    faraday (1.1.0)
       multipart-post (>= 1.2, < 3)
+      ruby2_keywords
     faraday_middleware (1.0.0)
       faraday (~> 1.0)
     ffi (1.13.1)
@@ -83,8 +84,12 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.4)
-    rouge (3.23.0)
+    rouge (3.24.0)
+    ruby2_keywords (0.0.2)
     safe_yaml (1.0.5)
+    serbea (0.4.4)
+      erubi (~> 1.9)
+      tilt (~> 2.0)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     thor (1.0.1)
@@ -104,6 +109,7 @@ DEPENDENCIES
   bridgetown-quick-search (~> 1.0)
   bridgetown-seo-tag (~> 3.0)
   bulmatown
+  serbea (~> 0.4.4)
 
 BUNDLED WITH
    2.1.4
