@@ -3,6 +3,7 @@ title: "Why Service Objects are an Anti-Pattern"
 subtitle: "Article after article has been published in recent years about the benefits of adding service objects to Rails applications. I’m here to tell you they’re wrong. There is a better way."
 categories:
 - Object Orientation
+- Rails
 layout: post
 author: jared
 image: "/images/posts/software-patterns.jpg"
