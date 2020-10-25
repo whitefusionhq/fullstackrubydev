@@ -3,6 +3,7 @@ title: "Use Ruby Objects to Keep Your Rake Tasks Clean"
 subtitle: "In the spirit of DHH's On Writing Software Well series, I'll be demonstrating by looking at live production code."
 categories:
 - Refactoring
+- Rails
 layout: post
 author: jared
 ---
