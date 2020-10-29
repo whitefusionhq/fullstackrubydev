@@ -1,6 +1,5 @@
 ---
 layout: bulmatown/page
-render_with_liquid: false
 ---
 
 {%= yield %}

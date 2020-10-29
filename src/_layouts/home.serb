@@ -1,6 +1,5 @@
 ---
 layout: default
-render_with_liquid: false
 ---
 
 {% home_title = "Welcome to #{site.metadata.title}" %}

@@ -10,13 +10,13 @@ GEM
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     amazing_print (1.2.2)
-    bridgetown (0.17.1)
-      bridgetown-builder (= 0.17.1)
-      bridgetown-core (= 0.17.1)
-      bridgetown-paginate (= 0.17.1)
-    bridgetown-builder (0.17.1)
-      bridgetown-core (= 0.17.1)
-    bridgetown-core (0.17.1)
+    bridgetown (0.18.0)
+      bridgetown-builder (= 0.18.0)
+      bridgetown-core (= 0.18.0)
+      bridgetown-paginate (= 0.18.0)
+    bridgetown-builder (0.18.0)
+      bridgetown-core (= 0.18.0)
+    bridgetown-core (0.18.0)
       activesupport (~> 6.0)
       addressable (~> 2.4)
       amazing_print (~> 1.2)
@@ -40,8 +40,8 @@ GEM
       tilt (~> 2.0)
     bridgetown-feed (1.1.2)
       bridgetown (>= 0.6, < 2.0)
-    bridgetown-paginate (0.17.1)
-      bridgetown-core (= 0.17.1)
+    bridgetown-paginate (0.18.0)
+      bridgetown-core (= 0.18.0)
     bridgetown-quick-search (1.0.3)
       bridgetown (>= 0.15.0.beta1, < 2.0)
     bridgetown-seo-tag (3.0.5)
@@ -87,7 +87,8 @@ GEM
     rouge (3.24.0)
     ruby2_keywords (0.0.2)
     safe_yaml (1.0.5)
-    serbea (0.4.4)
+    serbea (0.6.3)
+      activesupport (~> 6.0)
       erubi (~> 1.9)
       tilt (~> 2.0)
     terminal-table (1.8.0)
@@ -98,18 +99,18 @@ GEM
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
     unicode-display_width (1.7.0)
-    zeitwerk (2.4.0)
+    zeitwerk (2.4.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  bridgetown (~> 0.17)
+  bridgetown (~> 0.18)
   bridgetown-feed (~> 1.1)
   bridgetown-quick-search (~> 1.0)
   bridgetown-seo-tag (~> 3.0)
   bulmatown
-  serbea (~> 0.4.4)
+  serbea (~> 0.6)
 
 BUNDLED WITH
    2.1.4
