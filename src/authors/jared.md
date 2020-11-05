@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Articles by Jared
+template_engine: liquid
 ---
 
 Hi, I'm Jared! I help maintain Ruby open source software like [Bridgetown](https://www.bridgetownrb.com) and [Ruby2JS](https://github.com/rubys/ruby2js), and I work as a consultant with [Whitefusion](https://whitefusion.io). **RUBY3.dev** is my pet project. ☺ Find me on Twitter [@jaredcwhite](https://twitter.com/jaredcwhite){:rel="noopener"}.

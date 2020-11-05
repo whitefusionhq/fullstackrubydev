@@ -6,6 +6,10 @@ layout: bulmatown/post
 
 {{ liquid_render "subscribe" }}
 
+{% if page.data.image_credit %}
+  <p class="mt-6 is-size-7 has-text-centered"><em>Banner image by <a href="{{ page.data.image_credit.url | safe }}">{{ page.data.image_credit.label }}</a></em></p>
+{% end %}
+
 <hr class="my-6" />
 
 <h1 class="mb-6 title has-text-centered">Other Recent Articles</h1>

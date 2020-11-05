@@ -4,7 +4,6 @@ title: Articles
 exclude_from_search: true
 pagination:
   enabled: true
-template_engine: serbea
 ---
 
 {% posts = paginator.documents %}

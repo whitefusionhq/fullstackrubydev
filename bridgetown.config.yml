@@ -20,6 +20,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Additional build settings go here
 permalink: pretty
 
+template_engine: serbea
+
 timezone: America/Los_Angeles
 
 pagination:

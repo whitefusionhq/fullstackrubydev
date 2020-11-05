@@ -1,5 +1,6 @@
 ---
 layout: home
+template_engine: liquid
 ---
 
 {% render "sponsor" %}
@@ -27,4 +28,4 @@ layout: home
 {% endif %}
 
 
-<p class="mt-6 is-size-7 has-text-centered"><em>Hero image by <a href="https://unsplash.com/photos/g9Ek7TzdMVc">Aldebaran S on Unsplash</a></em></p>
+<p class="mt-6 is-size-7 has-text-centered"><em>Banner image by <a href="https://unsplash.com/photos/g9Ek7TzdMVc">Aldebaran S on Unsplash</a></em></p>

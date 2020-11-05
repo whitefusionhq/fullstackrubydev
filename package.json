@@ -12,7 +12,7 @@
     "start": "node start.js"
   },
   "dependencies": {
-    "bridgetown-quick-search": "1.0.3",
+    "bridgetown-quick-search": "1.0.5",
     "bulmatown": "1.0.7"
   },
   "devDependencies": {

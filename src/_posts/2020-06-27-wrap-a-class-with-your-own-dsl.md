@@ -8,6 +8,7 @@ author: jared
 image: /images/posts/hello-jekyll.jpg
 image_hero: /images/posts/hello-jekyll.jpg
 published: false
+template_engine: liquid
 ---
 
 Here's the final code example:
