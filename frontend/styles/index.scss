@@ -101,6 +101,11 @@ div.highlighter-rouge + div.highlighter-rouge > div.highlight {
 body.post .hero {
   background-position: center center;
 }
+body.home, body.page {
+  --overlay-top-left: rgba(97,6,36,0.2);
+  --overlay-center: rgba(138,16,36,0.5);
+  --overlay-bottom-right: rgba(165,15,14,0.85);
+}
 
 article .author {
   font-size: 0.93em;
