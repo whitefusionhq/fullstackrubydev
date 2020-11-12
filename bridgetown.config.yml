@@ -16,7 +16,7 @@
 #
 
 baseurl: "" # OPTIONAL: the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.ruby3.dev" # the base hostname & protocol for your site, e.g. http://example.com
 # Additional build settings go here
 permalink: pretty
 
