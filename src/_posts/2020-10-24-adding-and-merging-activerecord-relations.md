@@ -3,7 +3,6 @@ title: "Adding and Merging ActiveRecord Relations"
 subtitle: "The expressive possibilities of assembling ActiveRecord queries out of disparate parts make using Rails so fun."
 categories:
 - Rails
-layout: post
 author: jared
 image: /images/posts/colorful-prism.jpg
 image_hero: /images/posts/colorful-prism.jpg

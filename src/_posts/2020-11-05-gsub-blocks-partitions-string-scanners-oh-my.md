@@ -3,7 +3,6 @@ title: Gsub Blocks, Partitions, and StringScanners, Oh My!
 subtitle: "Ruby gives you a lot of flexibility right out of the box when it comes to manipulating text due to its Perl-flavored heritage. Let's dig into what's possible!"
 categories:
 - String Theory
-layout: post
 author: jared
 image: /images/posts/string-theory.jpg
 image_hero: /images/posts/string-theory.jpg
