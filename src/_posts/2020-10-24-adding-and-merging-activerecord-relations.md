@@ -6,6 +6,9 @@ categories:
 author: jared
 image: /images/posts/colorful-prism.jpg
 image_hero: /images/posts/colorful-prism.jpg
+image_credit:
+  label: Michael Dziedzic on Unsplash
+  url: https://unsplash.com/photos/dSyhpTGhNHg
 ---
 
 An intriguing scenario arose in a project I was working on. In this application, creators can create plugin presets. Presets themselves are associated with "banks" — aka a bank `has_many` presets. There are also actions that can be taken against either banks or presets: users generally will bookmark them or download them. Thus these actions have a _polymorphic_ association with both presets and banks.
@@ -41,6 +44,3 @@ Second, we get the list of presets for those banks, again pulling in only the id
 The last line of the method is where things get interesting. We want actions where the `actionable` association brings in both the banks and the presets we've loaded, so we use the `+` operator to concatenate both result sets together. Once we have that relation, we can use ActiveRecord's `merge` functionality to pull in additional scopes that specify we only want either `bookmark` or `download` actions. We don't want any other actions (say, `publish`), because those are actions taken by creators, not end users.
 
 And that does the trick! Yay! A brief but useful example of the expressive power of adding and merging ActiveRecord relations together to get a final result.
-
-_Cover: [Michael Dziedzic on Unsplash](https://unsplash.com/photos/dSyhpTGhNHg)_
-{:.is-size-7 .mt-5}

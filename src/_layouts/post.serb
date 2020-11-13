@@ -2,7 +2,7 @@
 layout: bulmatown/post
 ---
 
-{%= yield %}
+<div class="content-column">{%= yield %}</div>
 
 {{ liquid_render "subscribe" }}
 
