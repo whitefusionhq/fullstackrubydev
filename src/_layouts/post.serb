@@ -23,6 +23,6 @@ layout: bulmatown/post
 
 <div class="my-5">&nbsp;</div>
 
-{% markdownify do %}
+{%= markdownify do %}
   {{ liquid_render "sponsor" }}
 {% end %}
