@@ -165,4 +165,4 @@ If you wanted to get _really fancy_ with Ruby-fu metaprogramming, you could stor
 
 ### Summary
 
-So there you have it: Ruby blocks are fun and weird and can do so much, yet they ask so little of us in return. May we learn to appreciate how much work they have to do under the hood to make it all seem so easy. And now that you know more about bindings, lexical scope, and the wizard-like power of `instance_exec`, you too can have precise control over exactly what’s going on as you wield (and `yield`) procs and lambdas like a _mahōtsukai_.
+So there you have it: Ruby blocks are fun and weird and can do so much, yet they ask so little of us in return. May we learn to appreciate how much work they have to do under the hood to make it all seem so easy. And now that you know more about bindings, lexical scope, and the wizard-like power of `instance_exec`, you too can have precise control over exactly what’s going on as you wield (and `yield`) procs and lambdas like a _mahōtsukai_. {%= ruby_gem %}
