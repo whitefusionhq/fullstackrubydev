@@ -94,7 +94,7 @@ a_game({b: "bee"})
 
 Now that you have a nil value, you can write defensive code to work around the missing data.
 
-## What about all the \*\*rest?
+### What about all the \*\*rest?
 
 Looking back at our original array destructuring example, we were able to get an array of all the values besides the first ones we pulled out as variables. Wouldn’t it be cool if we could do that with hashes too? Well now we can!
 
@@ -120,13 +120,13 @@ In addition, we can do some crazy stuff like pull out array slices before and af
 # left == [-1, 0], right == [3]
 ```
 
-## Rightward assignment within pattern matching 🤯
+### Rightward assignment within pattern matching 🤯
 
 Ready to go all _Inception_ now?!
 
 ![freaky folding city GIF](/images/posts/inception.gif){:style="width:100%"}
 {:.has-text-centered .mx-auto .my-5}
-{:style="max-width:500px"}
+{:style="max-width:600px"}
 
 You can use rightward assignment techniques **within a pattern matching expression** to pull out disparate values from an array. In other words, you can pull out everything up to a particular type, grab that type’s value, and then pull out everything after that.
 
