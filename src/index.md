@@ -5,7 +5,7 @@ template_engine: liquid
 
 {% render "sponsor" %}
 
-{{ site.metadata.description | replace: "It was dawn of the third age of Ruby… <br/><br/>", "" }}
+{{ site.metadata.description | replace: "It was the dawn of the third age of Ruby… <br/><br/>", "" }}
 {:.has-text-weight-bold .has-text-centered .mt-6}
 
 [Read our tidy little manifesto](/about) or explore the articles below.
