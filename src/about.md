@@ -5,7 +5,7 @@ subtitle: We <3 Ruby :)
 permalink: /about/
 ---
 
-Ruby version 3 is nearly upon us. Rails 6.1. Stimulus Reflex 3. Bridgetown. RBS. Ractors. The list goes on…
+Ruby version 3 has finally arrived. Rails 6.1. Turbo. Stimulus Reflex 3. Bridgetown. Ractors. The list goes on…
 {:.has-text-weight-bold .has-text-centered .mt-6}
 
 If you thought you knew Ruby because you tinkered around with it a few years ago, think again.
