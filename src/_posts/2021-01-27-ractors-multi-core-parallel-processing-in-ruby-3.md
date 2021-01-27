@@ -26,11 +26,11 @@ Welcome to **Ractor**, a brand-new method of running async code in Ruby 3.
 
 Ractor is an experimental new class in the Ruby corelib. With ractors, Ruby has for the first time lifted restrictions on the GIL. Now you can have multiple "RILs" if you will—aka one interpreter lock per ractor (and shared between multiple threads within a single ractor if you spawn threads).
 
-Ractor is shorthand for “Ruby actor”. The actor concept has long been established in other languages such as Elixr to handle concurrency concerns. Essentially an actor is a unit of code that executes asynchronously and uses message passing to send and receive data from the main codepath or even other actors. For more on the history and conceptual thinking behind Ruby actors, [read this Scout APM blog post](https://scoutapm.com/blog/ruby-ractor) Kumar Harsh.
+Ractor is shorthand for “Ruby actor”. The actor concept has long been established in other languages such as Elixr to handle concurrency concerns. Essentially an actor is a unit of code that executes asynchronously and uses message passing to send and receive data from the main codepath or even other actors. For more on the history and conceptual thinking behind Ruby actors, [read this Scout APM blog post](https://scoutapm.com/blog/ruby-ractor) by Kumar Harsh.
 
 There are a variety of patterns at your disposal when using ractors, some of which are explained in the [extensive Ractor documentation](https://docs.ruby-lang.org/en/3.0.0/doc/ractor_md.html#label-Examples).
 
-I'm very impressed by how simple it is to program with ractors. I've tried to work with Threads or gems in the past that aid with async development, and it's always made my brain hurt with little to show for my efforts. Using the `Ractor` class is about as easy as I could possibly imagine, short of a one-line `async` keyword.
+I'm very impressed by how simple it is to program with ractors. I've tried to work with Threads or gems in the past that aid with async development, and it's always made my brain hurt with little to show for my efforts. Using the `Ractor` class is about as easy as I could possibly imagine (short of a one-line `async` keyword).
 
 The other thing I’m impressed by is how straightforward it is to get deterministic, ordered output from multiple ractors. In the past if I tried to use threads to process data and add the outputs to an array, the array values would be out of order. If thread 1 finished _after_ thread 2, the final array would be in 2, 1 order. With the `ractors.map(&:take)` pattern, you're guaranteed that even if one ractor takes 2 seconds to process and another takes 6, you'll still end up with an array of values in the same order in which you started up the ractors.
 
@@ -41,7 +41,33 @@ I wanted to create the most basic example of ractors I could think of that would
 Here’s a script that spins up 20 ractors which perform some intensive data processing and return an output value, and the final script output is a joined array of all the ractor outputs.
 
 ```ruby
-...
+require "benchmark"
+
+ractors = []
+values = []
+
+puts "Starting Ractor processing"
+
+time_elapsed = Benchmark.measure do
+  20.times do |i|
+    ractors << Ractor.new(i) do |i|
+      puts "In Ractor #{i}"
+      5_000_000.times do |t|
+        str = "#{t}"; str = str.upcase + str;
+      end
+      puts "Finished Ractor #{i}"
+      "i: #{i}" # implicit return value, or use Ractor.yield
+    end
+  end
+
+  values = ractors.map(&:take)
+end
+
+# avg: 22 seconds, 1.6x performance over not_ractors
+puts "End of processing, time elapsed: #{time_elapsed.real}"
+
+# deterministic output. nice!
+puts values.join(", ")
 ```
 
 As you can see, using the `Ractor` class can be nearly as easy as working with standard lambdas. You don’t have to spend much mental overhead working through any additional data structures, scheduling, or thread concepts like mutexes. It “just works”.
@@ -49,7 +75,27 @@ As you can see, using the `Ractor` class can be nearly as easy as working with s
 And not only that, but it’s noticeably faster than a non-`Ractor`-based script:
 
 ```ruby
-...
+require "benchmark"
+
+values = []
+
+puts "Starting Not-Ractor processing"
+
+time_elapsed = Benchmark.measure do
+  20.times do |i|
+    puts "In Not-Ractor #{i}"
+    5_000_000.times do |t|
+      str = "#{t}"; str = str.upcase + str;
+    end
+    puts "Finished Not-Ractor #{i}"
+    values << "i: #{i}"
+  end
+end
+
+# 34.5 seconds, fans spun up !!!
+puts "End of processing, time elapsed: #{time_elapsed.real}"
+
+puts values.join(", ")
 ```
 
 After a number of runs of both scripts on my tricked-out 16” MacBook Pro, the ractors exhibited a 1.6x performance increase. I’ve heard reports of other tests where converting Ruby code to use ractors resulted in 3x performance increases.
