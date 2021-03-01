@@ -78,4 +78,4 @@ _But not Solargraph._ You'd have to pry that out of my cold dead hands. 😆
 
 ### Conclusion?
 
-What are your thoughts concerning Ruby 3 and static typing? Do you think this ecosystem is headed in the right direction? Do you think I'm wrong in promoting code comments as the preferred way to add typing to Ruby? Would you use Solargraph + Sord + Steep if it all worked together seamlessly? [Drop a comment and let me know over at DEV.to!](https://dev.to/jaredcwhite/static-typing-in-ruby-3-gives-me-a-headache-but-i-could-grow-to-like-it-44p5-temp-slug-5448565) {%= ruby_gem %}
+What are your thoughts concerning Ruby 3 and static typing? Do you think this ecosystem is headed in the right direction? Do you think I'm wrong in promoting code comments as the preferred way to add typing to Ruby? Would you use Solargraph + Sord + Steep if it all worked together seamlessly? [Drop a comment and let me know over at DEV.to!](https://dev.to/jaredcwhite/static-typing-in-ruby-3-gives-me-a-headache-but-i-could-grow-to-like-it-4p7i) {%= ruby_gem %}
