@@ -1,6 +1,6 @@
 ---
 title: "Static Typing in Ruby 3 Gives Me a Headache (But I Could Grow to Like It)"
-subtitle: It kinda sorta works with—several asterisks. Hence the reason it took me so long to even write an article about Ruby 3 typing. I think I'm onboard with where this is all headed, but we have a ways to get there.
+subtitle: It kinda sorta works—with several asterisks. Hence the reason it took me so long to even write an article about Ruby 3 typing. I think I'm onboard with where this is all headed, but we have a ways to get there.
 categories:
 - Ruby 3 Fundamentals
 author: jared
