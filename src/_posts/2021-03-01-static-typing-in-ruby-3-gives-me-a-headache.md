@@ -51,7 +51,7 @@ That's where Ruby 3 + Sord comes in.
 
 ### Ruby 3 + Sord = The Best of Both Worlds?
 
-[Sord](https://github.com/AaronC81/sord) was originally developed to generate _Sorbet_ type signature files from YARD comments. Sorbet is a type checking system developed by Stripe, and it does not use anything specific to Ruby 3 but is instead a custom DSL for defining types. However, Sord has recently been upgraded to support generation of **RBS** files (**R**u**b**y **Signature**). This means that instead of having to write all your Ruby 3 type signature files by hand (which are standalone—Ruby 3 doesn't support inline typing in Ruby code itself), you can write YARD comments—just like with Solargraph—and autogenerate the signature files.
+[Sord](https://github.com/AaronC81/sord) was originally developed to generate _Sorbet_ type signature files from YARD comments. Sorbet is a type checking system developed by Stripe, and it does not use anything specific to Ruby 3 but is instead a custom DSL for defining types. However, Sord has recently been upgraded to support generation of **RBS** files (**R**u**b**y **S**ignature). This means that instead of having to write all your Ruby 3 type signature files by hand (which are standalone—Ruby 3 doesn't support inline typing in Ruby code itself), you can write YARD comments—just like with Solargraph—and autogenerate the signature files.
 
 Once you have those in place, you use a tool called [Steep](https://github.com/soutaro/steep), which is the official type checker "blessed" by the Ruby core team. Steep evaluates your code against your signature files and provides a printout of all the errors and warnings (similar to any other type checker, TypeScript and beyond).
 
