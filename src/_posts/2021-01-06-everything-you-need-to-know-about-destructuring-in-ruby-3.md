@@ -79,7 +79,7 @@ Darn, we get a runtime error. Now maybe that’s what you want if your code woul
 
 ```ruby
 def a_game(hsh)
-  hsh => {a:} rescue NoMatchingPatternError
+  hsh => {a:} rescue nil
   puts "`a` is #{a}, of type #{a.class}"
 end
 ```
