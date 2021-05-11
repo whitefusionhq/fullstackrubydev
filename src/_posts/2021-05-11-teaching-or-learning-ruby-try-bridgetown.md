@@ -23,7 +23,7 @@ What's changed in v0.21 is you can now add a page, or a layout, or a data file, 
 
 ### Demo Time
 
-**Check out this [sample repo on GitHub](https://github.com/jaredcwhite/minimal-bridgetown-ruby-site), along with [the demo site here](https://github.com/jaredcwhite/minimal-bridgetown-ruby-site/search?l=ruby).**
+**Check out this [sample repo on GitHub](https://github.com/jaredcwhite/minimal-bridgetown-ruby-site), along with [the demo site here](https://minimal-bridgetown-ruby-site.onrender.com).**
 
 Feel free to fork the repo and take it for a spin! The only top-level files needed are the typical `Gemfile`/`Gemfile.lock` pair, and the `bridgetown.config.yml` file loaded by Bridgetown. Everything else goes in `src`. Let's see what we have inside:
 
