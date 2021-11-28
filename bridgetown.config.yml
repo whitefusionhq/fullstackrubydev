@@ -15,9 +15,8 @@
 # https://learnxinyminutes.com/docs/yaml/
 #
 
-baseurl: "" # OPTIONAL: the subpath of your site, e.g. /blog
-url: "https://www.fullstackruby.dev" # the base hostname & protocol for your site, e.g. http://example.com
-# Additional build settings go here
+url: "https://www.fullstackruby.dev"
+
 permalink: pretty
 
 template_engine: serbea
