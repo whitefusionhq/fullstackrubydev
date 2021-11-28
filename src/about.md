@@ -1,18 +1,18 @@
 ---
 layout: page
-title: About RUBY3.dev
-subtitle: We <3 Ruby :)
+title: About Fullstack Ruby
+subtitle: 'We <3 Ruby 😊 <img src="/images/ruby.svg" width="24" style="vertical-align: -0.1em;margin-left: 0.1em" />'
 permalink: /about/
 ---
 
-Ruby version 3 has finally arrived. Rails 6.1. Turbo. Stimulus Reflex 3. Bridgetown. Ractors. The list goes on…
+The age of Ruby v3 is here. Rails 7. Hotwire. Stimulus Reflex. Bridgetown. Solargraph. The list goes on…
 {:.has-text-weight-bold .has-text-centered .mt-6}
 
-If you thought you knew Ruby because you tinkered around with it a few years ago, think again.
+If you thought you knew Ruby because you tinkered around with it a few years ago, [think again](/the-art-of-code/2020/11/12/ruby-3-monumental/).
 {:.has-text-weight-bold .has-text-centered .mt-6}
 
-As the saying goes, rumors of [Ruby](https://isrubydead.com)'s (and [Rails'](https://israilsdead.com)) death have been greatly exaggerated.
+And it's _not_ just for the backend. It's for the frontend too, courtesy of [Ruby2JS and Opal](/frontend-development/2020/12/03/ruby-on-the-frontend/).
 {:.has-text-weight-bold .has-text-centered .mt-6}
 
-That's why we started [RUBY3.dev](/). It's time to fall in love with Ruby all over again.
+That's why we started [Fullstack Ruby](/). It's time to fall in love with Ruby all over again.
 {:.has-text-weight-bold .has-text-centered .mt-6}

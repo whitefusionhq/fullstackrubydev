@@ -2,11 +2,12 @@
 layout: page
 title: "Topic: :prototype-term-titleize"
 prototype:
+  collection: posts
   term: category
 template_engine: liquid
 ---
 
-{% assign posts = paginator.documents %}
+{% assign posts = paginator.resources %}
 {% render "bulmatown/collection", collection: posts, metadata: site.metadata %}
 
 {% render "bulmatown/pagination", paginator: paginator %}

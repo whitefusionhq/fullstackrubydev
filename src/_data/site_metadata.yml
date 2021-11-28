@@ -1,9 +1,10 @@
-title: RUBY3.dev
-tagline: It was the dawn of the third age of Ruby…
+title: Fullstack Ruby
+home_title: "Futuristic #WebDev That’s Fast <em>and</em> Fun"
+tagline: Elevate your Ruby skills. Everywhere.
 description: >- # this means to ignore newlines until "baseurl:"
   It was the dawn of the third age of Ruby… <br/><br/>=> Hashrocket into the future every week and become a wiz at this delightful and powerful language.
 
-twitter: ruby3dev
+twitter: fullstack_ruby
 
 bulmatown_theme:
   image_sizes:

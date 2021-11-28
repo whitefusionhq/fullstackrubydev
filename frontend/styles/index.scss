@@ -1,4 +1,5 @@
 $primary: #8a1024;
+$primary-dark: #5f1331;
 
 $inverse-link: #f5d0d6;
 
@@ -21,13 +22,12 @@ $title-weight: 900 !important;
 $family-monospace: ui-monospace, monospace;
 $family-serif: ui-serif, Georgia, serif;
 
+$footer-background-color: $primary-dark;
+
 @import "~bulmatown/frontend/styles";
 
 .ruby-icon {
   filter: drop-shadow(0px 0px 4px #ffffccaa);
-  .navbar & {
-    width: 20px;
-  }
   .footer & {
     width: 18px;
   }
@@ -86,7 +86,30 @@ div.highlighter-rouge + div.highlighter-rouge > div.highlight {
 }
 
 .navbar .navbar-brand {
-  font-weight: 900;
+  svg.logo {
+    height: 75px;
+    width: auto;
+  }
+}
+.navbar {
+  @include touch {
+    .navbar-menu {
+      .navbar-item, .navbar-link {
+        color: $text;
+
+        &:focus, &:focus-within, &:hover, &.is-active {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .search-item input {
+    border: 1px solid $primary;
+  }
+}
+.navbar-burger {
+  height: 5.15rem;
 }
 
 .hero {
@@ -122,10 +145,20 @@ p.sponsor-message {
 
 footer.footer {
   color: $inverse-link;
-  a, strong, .logo {
+  a, strong {
     color: white;
   }
+
   .logo {
-    font-weight: 900;
+    height: 140px;
+    width: auto;
+    margin-bottom: 1rem;
+  }
+
+  #fullstack-ruby-logo-fullstack path {
+    fill: white !important;
+  }
+  #fullstack-ruby-logo-ruby path {
+    fill: white !important;
   }
 }

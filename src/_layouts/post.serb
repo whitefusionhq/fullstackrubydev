@@ -6,18 +6,18 @@ layout: bulmatown/post
 
 {{ liquid_render "subscribe" }}
 
-{% if page.data.image_credit %}
-  <p class="mt-6 is-size-7 has-text-centered"><em>Banner image by <a href="{{ page.data.image_credit.url | safe }}">{{ page.data.image_credit.label }}</a></em></p>
+{% if resource.data.image_credit %}
+  <p class="mt-6 is-size-7 has-text-centered"><em>Banner image by <a href="{{ page.data.image_credit.url | safe }}">{{ resource.data.image_credit.label }}</a></em></p>
 {% end %}
 
 <hr class="my-6" />
 
 <h1 class="mb-6 title has-text-centered">Other Recent Articles</h1>
 
-{% posts = page.related_posts[0...2] %}
+{% posts = collections.posts.resources.select { |post| post != resource }[0...2] %}
 {{ liquid_render "bulmatown/collection", collection: posts, metadata: site.metadata }}
 
-{% if page.related_posts.size > 2 %}
+{% if collections.posts.resources.size > 3 %}
   <p class="mt-6 has-text-centered"><a href="/articles" class="button is-primary is-outlined is-small"><span>More This Way </span> <span class="icon"><i class="fa fa-arrow-right"></i></span></a></p>
 {% end %}
 

@@ -2,9 +2,8 @@
 layout: default
 ---
 
-{% home_title = "Welcome to #{site.metadata.title}" %}
 {{ liquid_render "bulmatown/hero_wrapper",
-    title: home_title,
+    title: site.metadata.home_title,
     subtitle: site.metadata.tagline,
     page: page,
     metadata: site.metadata

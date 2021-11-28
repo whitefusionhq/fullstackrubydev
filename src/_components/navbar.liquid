@@ -1,7 +1,7 @@
-{% rendercontent "bulmatown/navbar", class: "is-dark" %}
+{% rendercontent "bulmatown/navbar" %}
   {% with logo %}
     <a class="navbar-item" href="/">
-      <img src="/images/ruby.svg" class="mr-2 ruby-icon" /> {{ metadata.title }}
+      {% svg "/images/fullstack_ruby_logo.svg", class: "logo", aria-labelledby: "fullstack-ruby-logo-title" %}
     </a>
   {% endwith %}
   {% with items_start %}
@@ -28,7 +28,7 @@
       {% render "bridgetown_quick_search/search", placeholder: "Search", input_class: "input" %}
     </div>
     <a class="navbar-item is-hidden-desktop-only" href="https://twitter.com/{{ metadata.twitter }}" target="_blank">
-      <span class="icon"><i class="fa fa-twitter is-size-6"></i></span>
+      <span class="icon has-text-info"><i class="fa fa-twitter is-size-6"></i></span>
       <span class="is-hidden-tablet">Twitter</span>
     </a>
   {% endwith %}
