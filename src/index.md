@@ -5,7 +5,7 @@ exclude_from_search: true
 
 {%= liquid_render "sponsor" %}
 
-{{ site.metadata.description | sub: "It was the dawn of the third age of Ruby… <br/><br/>", "" }}
+{{ site.metadata.description | sub: "Futuristic #WebDev That’s Fast and Fun. ", "" }}
 {:.has-text-weight-bold .has-text-centered .mt-6}
 
 [Read our tidy little manifesto](/about) or explore the articles below.
