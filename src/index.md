@@ -1,6 +1,7 @@
 ---
 layout: home
 exclude_from_search: true
+image: "https://mugshotbot.com/m?theme=two_up&mode=light&color=8a1024&pattern=diagonal_lines&image=eed29abf&hide_watermark=true&url=https%3A%2F%2Fwww.fullstackruby.dev"
 ---
 
 {%= liquid_render "sponsor" %}
