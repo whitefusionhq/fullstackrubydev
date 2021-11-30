@@ -4,7 +4,6 @@ subtitle: Today, right now, right this very minute, is the absolute best time to
 categories:
 - Fullstack Development
 - Frontend Development
-- Compare and Contrast
 author: jared
 image: /images/posts/light-trails.jpg
 image_hero: /images/posts/light-trails.jpg
