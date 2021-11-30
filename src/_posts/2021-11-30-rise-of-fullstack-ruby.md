@@ -1,0 +1,40 @@
+---
+title: The Rise of Fullstack Ruby & the Next Frontier of the Web
+subtitle: Today, right now, right this very minute, is the absolute best time to be a fullstack Ruby/web developer! And tomorrow will be even better.
+categories:
+- Fullstack Development
+- Frontend Development
+- Compare and Contrast
+author: jared
+image: /images/posts/light-trails.jpg
+image_hero: /images/posts/light-trails.jpg
+image_credit:
+  url: https://unsplash.com/photos/mrIaqKh9050
+  label: Johannes Groll on Unsplash
+---
+
+Welcome back to RUBY3.dev! Only…it’s not! Rather, a very warm welcome from **Fullstack Ruby**. Why the name change?
+
+Well, a couple of reasons—the first of which is that your humble author (that’s me!) is not just a “Ruby developer” but a “web developer” as well.  Yes, I’ll admit it: I don’t just write Ruby because I like assembling command line tools or crafting data processors or solving algorithmic puzzles. I like building websites. And I like building tools for building websites. I’m a web developer. It’s in my DNA.
+
+So running a blog that’s generically about Ruby couldn’t hold my attention for too long. Thus I had to simultaneously narrow the focus all while expanding it to the broader web industry.
+
+The second reason is that today, right now, right this very minute, is the absolute best time to be a _fullstack_ Ruby/web developer. And tomorrow will be even better! Never have we had such a robust arsenal of tools at our disposal for building sites and apps that encompass both the backend and frontend in novel and exciting ways. Let us enumerate just what’s so great about the Ruby landscape at this juncture:
+
+* **[Turbo](https://turbo.hotwired.dev)**: in many ways a straightforward evolution of Turbolinks, Turbo—as a cornerstone of Hotwire (aka HTML-Over-the-Wire)—brings a new layer of interactivity to the frontend which leverages the backend templates and processes you already know and love. Instead of having to write two apps (a frontend app and a backend API), you just write one app, and Turbo provides the baseplate of “glue code” for composing your frontend out of backend “parts”. Whereas fullstack web development used to be primarily a “page-based” notion, it’s now fully modular. Turbo even works on static sites! Whoa.
+* **[StimulusReflex](https://docs.stimulusreflex.com/v/v3.5/) & [CableReady/CableCar](https://cableready.stimulusreflex.com/v/v5/)**: StimulusReflex has taken the Rails world by storm as a launching pad for “reactive” programming which leverages WebSockets for fast two-way communications and broadcasts. It utilizes Stimulus (also part of Hotwire) as well as CableReady, a lower-level fullstack toolkit for generating and performing dynamic DOM operations. Of personal interest to me is [CableCar](https://cableready.stimulusreflex.com/v/v5/cable-car), a feature currently in beta which lets you build and execute CableReady operations via any standard request/response. Paired with **[mrujs](https://mrujs.com)**, a new swiss-army-knife library by Konnor Rogers, it makes advanced Ruby-based form handling a breeze.
+* **[Ruby2JS](https://www.ruby2js.com)**: what if I told you…you could write Ruby for the frontend, not just the backend? 🤯 That’s the promise of Ruby2JS. It’s not [Opal](https://opalrb.com)—it doesn’t ship a veritable Ruby runtime to your browser. (Though Opal is very, very cool in its own right and in fact powers Ruby2JS’ pure-Node compiler implementation.) Rather, Ruby2JS allows you to write clean, modern ESM-flavored frontend code via a Ruby syntax and many Ruby idioms (enabled by configurable “filters”). And it now sports a sweet, sweet [Lit](https://lit.dev) component filter which I use _heavily_. To underscore just how real this is, I use Rubocop to lint all my Ruby2JS files. And the output? Looks 99% like concise, hand-written JavaScript with no compromises. Works with Webpack, Snowpack, Vite, and—soon—esbuild. Boom. 💥
+* **[Serbea](https://www.serbea.dev)**: after literally decades of Ruby’s most popular template language, ERB, remaining entirely unchanged, Serbea is an exciting new take created by yours truly. It combines ERB’s power & flexibility with the expressiveness of handlebar-style languages like Nunjucks or Liquid, and it offers a native directive for rendering view components. I use it on _all_ my projects these days—yes, even in Rails—and can’t imagine ever going back to plain ERB.
+* **[Bridgetown](https://www.bridgetownrb.com)**: sure, I’m extremely biased. What can I say? As lead maintainer of Bridgetown, I believe it’s the best platform upon which to build public-facing websites. By taking full advantage of the power of Ruby, and combining it with nearly all of the next-gen techniques enumerated above, you can create sites which start out as blogs, landing pages, portfolios, stores, educational resources, etc.—then grow into fullstack applications with authentication, paywalls, payment processing, headless CMS integrations with live previews, and more. We’re still in the alpha days of what I call the **DREAMstack** (Delightful Ruby Expressing APIs & Markup), but everything listed above is under **active development**. Come 2022, this dream will officially turn into reality.
+
+So that’s the primary goal of the **Fullstack Ruby** blog going forward: to talk at length and in depth about all of the above futuristic technologies. And not just here on the blog, but on a new podcast as well entitled—shocker I know—**Fullstack Ruby**. 😅 Keep an eye out for the first teaser episode in early December.
+
+### From Ruby-ist to Browser-ist
+
+So if that’s the primary goal, what’s the secondary goal? To help introduce backend-focused Rubyists to some of the exciting new browser developments they may not be familiar with. Advancements in CSS and JavaScript. New APIs. New client/server architectures. Something I’ve discovered in talking with various long-time Ruby developers is that some have thrown the baby out with the bathwater. By rightly eschewing the madness of JS frontend frameworks/tooling run amuck, they’ve also limited their knowledge of what is genuinely cutting-edge and useful on the frontend. For example, it’s fine if you opine “gee, heavy-duty React development seems like a PITA!” But if in the process you also ignore custom elements/shadow DOM, libraries like Lit, CSS variables, animations, and other techniques for building live, reactive frontend components, you’re cutting off your nose to spite your face. Not _everything_ can fit cleanly into a Turbo/CableReady pipeline, or even a Stimulus controller. Sometimes, you just need to embrace “vanilla” JS & CSS. It’s OK. You can do it—_and_ maintain your sanity! 😌
+
+### Ruby for JavaScript Developers
+
+Finally, our third goal here at **Fullstack Ruby** is to introduce JavaScript developers to Ruby. We can shout all day from the rooftops how much we love Ruby and think it’s expressive and delightful—plus [MINASWAN](https://en.wiktionary.org/wiki/MINASWAN) and all that—but if a JS dev who’s written some APIs in Node Express and assembled some pages with Next.js has no idea what we’re talking about or why—or how it’s relevant to their career—the #Ruby #WebDev community won’t grow. It’s as simple as that. So let’s take a moment out of our day to respectfully showcase to our fellow JS devs what is so appealing about Ruby, about the ecosystem, and about the community. Not in a spirit of competition, but in a spirit of _collaboration_. We’re ultimately all in the same boat: building great websites and applications. **A polyglot web is a stronger web, a better web.**
+
+So that’s my spiel. If you’re feeling pumped about all these topics, [please sign up for our newsletter](https://www.fullstackruby.dev), [follow us on Twitter](https://twitter.com/fullstack_ruby), and let’s get this party started! 🎉
