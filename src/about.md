@@ -16,3 +16,7 @@ And it's _not_ just for the backend. It's for the frontend too, courtesy of [Rub
 
 That's why we started [Fullstack Ruby](/). It's time to fall in love with Ruby all over again.
 {:.has-text-weight-bold .has-text-centered .mt-6}
+
+<p class="has-text-centered" style="margin-top:6rem">
+  <small>(If you're looking for <strong>Fullstaq Ruby</strong>, <a href="https://fullstaqruby.org">that's over here</a>. ☺️)</small>
+</p>
