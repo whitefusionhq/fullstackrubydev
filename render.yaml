@@ -8,6 +8,10 @@ services:
     envVars:
       - key: BRIDGETOWN_ENV
         value: production
+    routes:
+      - type: redirect
+        source: /podcast
+        destination: /topics/podcast
     headers:
       - path: /*
         name: X-Frame-Options
