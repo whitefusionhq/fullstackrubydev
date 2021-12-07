@@ -183,9 +183,9 @@ In case you didn’t follow that mind-bendy syntax, it first assigns the value o
 
 So this is all amazingly powerful stuff. Of course you can use pattern matching in conditional logic such as `case` which is what all the original Ruby 2.7 examples showed, but I tend to think rightward assignment is even more useful for a wide variety of scenarios.
 
-### "Restructuring" for Hashes and Keyword Arguments in Ruby 3.1
+### "Restructuring" for hashes and keyword arguments in Ruby 3.1
 
-New with the release of Ruby 3.1 is the ability to use a short-hand syntax to avoid repetition in hash literals and or when calling keyword arguments.
+New with the release of Ruby 3.1 is the ability to use a short-hand syntax to avoid repetition in hash literals or when calling keyword arguments.
 
 First, let's see this in action for hashes:
 
@@ -200,7 +200,7 @@ hsh[:b] # 2
 
 What's going on here is that `{a:}` is shorthand for `{a: a}`. For the sake of comparison, JavaScript provides the same feature this way: `const a = 1; const obj = {a}`.
 
-I like `{a:}` because it's a mirror image of the hash deconstruction feature we discussed above. Let's round-trip-it!
+I like `{a:}` because it's a mirror image of the hash destructuring feature we discussed above. Let's round-trip-it!
 
 ```ruby
 hsh1 = {xyz: 123}
@@ -232,7 +232,7 @@ say_hello(first_name:)
 
 Prior to Ruby 3.1, you would have needed to write `say_hello(first_name: first_name)`. Now you can DRY up your method calls!
 
-Another little tidbit: the values you're passing via a hash literal or keyword arguments doesn't have to be a local variable. They can be method calls themselves. It even works with `method_missing`!
+Another goodie: the values you're passing via a hash literal or keyword arguments don't have to be merely local variables. They can be method calls themselves. It even works with `method_missing`!
 
 ```ruby
 class MissMe
@@ -260,9 +260,9 @@ MissMe.new.print_message
 
 What's happening here is we're instantiating a new `MissMe` object and calling `print_message`. That method in turn calls `miss_you` which actually prints out the message. But wait, where is `dear` actually being defined?! `print_message` certainly isn't defining that before calling `miss_me`. Instead, what's actually happening is the reference to `dear` in `print_message` is triggering `method_missing`. That in turn supplies the return value of `"my dear"`.
 
-Again, this all may seem quite magical but it would have worked virtually the same way in Ruby 3.0 and prior—only you would have had to write `miss_you(dear: dear)` inside of `print_message`. Is `dear: dear` any clearer? I don't think so.
+Now this all may seem quite magical, but it would have worked virtually the same way in Ruby 3.0 and prior—only you would have had to write `miss_you(dear: dear)` inside of `print_message`. Is `dear: dear` any clearer? I don't think so.
 
-In summary, short-hand hash literals and keyword arguments in Ruby 3.1 feels like we've come full circle in making both those language features a lot more ergonomic and—dare I say it—modern.
+In summary, the new short-hand hash literals/keyword arguments in Ruby 3.1 feels like we've come full circle in making both those language features a lot more ergonomic and—dare I say it—modern.
 
 ### Conclusion
 
