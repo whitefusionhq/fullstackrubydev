@@ -1,6 +1,6 @@
 ---
 title: Everything You Need to Know About Destructuring in Ruby 3
-subtitle: How improved pattern matching and rightward assignment make it possible to “destructure” hashes and arrays in Ruby 3.
+subtitle: Updated for Ruby 3.1! How improved pattern matching and rightward assignment make it possible to “destructure” hashes and arrays in Ruby 3.
 categories:
 - Ruby 3 Fundamentals
 author: jared
@@ -12,7 +12,7 @@ image_credit:
 published: true
 ---
 
-Welcome to our first article in a [series all about the exciting new features in Ruby 3](/topics/ruby-3-fundamentals)! Today we’re going to look how improved pattern matching and rightward assignment make it possible to “destructure” hashes and arrays in Ruby 3—much like how you’d accomplish it in, say, JavaScript—and some of the ways it goes far beyond even what you might expect.
+Welcome to our first article in a [series all about the exciting new features in Ruby 3](/topics/ruby-3-fundamentals)! Today we’re going to look how improved pattern matching and rightward assignment make it possible to “destructure” hashes and arrays in Ruby 3—much like how you’d accomplish it in, say, JavaScript—and some of the ways it goes far beyond even what you might expect. **December 2021: now updated for Ruby 3.1** — see below!
 
 ### First, a primer: destructuring arrays
 
@@ -182,6 +182,87 @@ jane => {school:, schools: [*, {id:, level: ^school}]}
 In case you didn’t follow that mind-bendy syntax, it first assigns the value of `school` (in this case, `"high"`), then it finds the hash within the `schools` array where `level` matches `school`. The `id` value is then assigned from that hash, in this case, `2`.
 
 So this is all amazingly powerful stuff. Of course you can use pattern matching in conditional logic such as `case` which is what all the original Ruby 2.7 examples showed, but I tend to think rightward assignment is even more useful for a wide variety of scenarios.
+
+### "Restructuring" for Hashes and Keyword Arguments in Ruby 3.1
+
+New with the release of Ruby 3.1 is the ability to use a short-hand syntax to avoid repetition in hash literals and or when calling keyword arguments.
+
+First, let's see this in action for hashes:
+
+```ruby
+a = 1
+b = 2
+hsh = {a:, b:}
+
+hsh[:a] # 1
+hsh[:b] # 2
+```
+
+What's going on here is that `{a:}` is shorthand for `{a: a}`. For the sake of comparison, JavaScript provides the same feature this way: `const a = 1; const obj = {a}`.
+
+I like `{a:}` because it's a mirror image of the hash deconstruction feature we discussed above. Let's round-trip-it!
+
+```ruby
+hsh1 = {xyz: 123}
+
+hsh1 => {xyz:}
+
+# now local variable `xyz` equals `123`
+
+hsh2 = {xyz:}
+
+# hsh2 now equals `{:xyz=>123}`
+```
+
+Better yet, this new syntax doesn't just work for hash literals. It also works for keyword arguments when calling methods!
+
+```ruby
+def say_hello(first_name:)
+  puts "Hello #{first_name}!"
+end
+
+# elsewhere…
+
+first_name = "Jared"
+
+say_hello(first_name:)
+
+# Hello Jared!
+```
+
+Prior to Ruby 3.1, you would have needed to write `say_hello(first_name: first_name)`. Now you can DRY up your method calls!
+
+Another little tidbit: the values you're passing via a hash literal or keyword arguments doesn't have to be a local variable. They can be method calls themselves. It even works with `method_missing`!
+
+```ruby
+class MissMe
+  def print_message
+    miss_you(dear:)
+  end
+
+  def miss_you(dear:)
+    puts "I miss you, #{dear} :'("
+  end
+
+  def method_missing(*args)
+    if args[0] == :dear
+      "my dear"
+    else
+      super
+    end
+  end
+end
+
+MissMe.new.print_message
+
+# I miss you, my dear :'(
+```
+
+What's happening here is we're instantiating a new `MissMe` object and calling `print_message`. That method in turn calls `miss_you` which actually prints out the message. But wait, where is `dear` actually being defined?! `print_message` certainly isn't defining that before calling `miss_me`. Instead, what's actually happening is the reference to `dear` in `print_message` is triggering `method_missing`. That in turn supplies the return value of `"my dear"`.
+
+Again, this all may seem quite magical but it would have worked virtually the same way in Ruby 3.0 and prior—only you would have had to write `miss_you(dear: dear)` inside of `print_message`. Is `dear: dear` any clearer? I don't think so.
+
+In summary, short-hand hash literals and keyword arguments in Ruby 3.1 feels like we've come full circle in making both those language features a lot more ergonomic and—dare I say it—modern.
 
 ### Conclusion
 
