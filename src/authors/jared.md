@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Articles by Jared
-template_engine: liquid
 ---
 
 Hi, I'm Jared! I help maintain Ruby open source software like [Bridgetown](https://www.bridgetownrb.com) and [Ruby2JS](https://github.com/rubys/ruby2js), and I work as a consultant with [Whitefusion](https://www.whitefusion.studio). **Fullstack Ruby** is my pet project. ☺ Find me on Twitter [@jaredcwhite](https://twitter.com/jaredcwhite){:rel="noopener"}.
@@ -12,10 +11,10 @@ Hi, I'm Jared! I help maintain Ruby open source software like [Bridgetown](https
 # Latest Articles
 {: .mb-6 .title .has-text-centered}
 
-{% assign posts = site.posts | slice: 0, 4 %}
-{% render "bulmatown/collection", collection: posts, metadata: site.metadata %}
+{% posts = collections.posts.resources[0...4] %}
+{%= liquid_render "bulmatown/collection", collection: posts, metadata: site.metadata %}
 
-{% if site.posts.size > 6 %}
+{% if collections.posts.resources.size > 4 %}
   <a href="/articles" class="button is-primary is-outlined is-small"><span>Previous Articles</span> <span class="icon"><i class="fa fa-arrow-right"></i></span></a>
   {: .mt-6 .has-text-centered}
-{% endif %}
+{% end %}
