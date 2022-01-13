@@ -6,7 +6,7 @@
 // when an update is applied hence we strongly recommend adding overrides to
 // `webpack.config.js` instead of editing this file.
 //
-// Shipped with Bridgetown v1.0.0
+// Shipped with Bridgetown v1.0.0.beta1
 
 const path = require("path");
 const rootDir = path.resolve(__dirname, "..")
@@ -119,7 +119,7 @@ module.exports = {
       filename: "../css/[name].[contenthash].css",
     }),
     new WebpackManifestPlugin({
-      fileName: path.resolve(rootDir, ".bridgetown-webpack", "manifest.json"),
+      fileName: path.resolve(rootDir, ".bridgetown-cache", "frontend-bundling", "manifest.json"),
     }),
   ],
   module: {
