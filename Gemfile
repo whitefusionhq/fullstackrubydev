@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem "bridgetown", "~> 1.0.0.beta2"
+gem "bridgetown", "~> 1.0.0"
 gem "bulmatown", "~> 1.2.2", group: :bridgetown_plugins
 gem "bridgetown-quick-search", "~> 1.1", :group => :bridgetown_plugins
 gem "bridgetown-seo-tag", "~> 5.0", :group => :"bridgetown_plugins"
