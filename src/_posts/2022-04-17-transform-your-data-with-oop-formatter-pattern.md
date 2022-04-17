@@ -67,12 +67,12 @@ Now let's call this formatter with some data:
 ```ruby
 hsh = { title: "hello   world!" }
 
-p ExampleFormatters::TitleFormatter.format(hsh).data
+p ExampleFormatters::TitleFormatter.new(hsh).format.data
 
 # => {:title=>"Hello World!"}
 ```
 
-Note that we're not returning a copy of the data object. We're mutating the data in-place. This is by design (generally better performance and lower memory usage). So in the above example, both `hsh` and the `data` method are equivalent after running the formatter. If you need to preserve the original state of the data, you should ensure you make a duplicate object before passing that along to the formatters—perhaps in the data pipeline (described further below).
+Note that we're not returning a copy of the data object. We're mutating the data in-place. This is by design (generally better performance and lower memory usage). So in the above example, both `hsh` and `data`'s return value are equivalent after running the formatter. If you need to preserve the original state of the data, you should ensure you make a duplicate object before passing that along to the formatters—perhaps in the data pipeline (described further below).
 
 This is the most basic example of how to write a formatter. However, you might want to add a bit of smarts, such that you can't run `format` more than once on the same dataset. We can change our base class then to this:
 
