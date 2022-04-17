@@ -1,3 +1,12 @@
+---
+title: Transform Your Data Object-Oriented Style with Formatters
+subtitle: I truly adore this design pattern. Once you know it, you start to see its usefulness across a wide variety of scenarios, codebases, and even programming languages.
+categories:
+- Object Orientation
+author: jared
+template_engine: none
+---
+
 # Transform Your Data Object-Oriented Style with Formatters
 
 I admit it. I'm a design pattern nerd. I have been a massive fan of object-oriented design patterns ever since I read [Patterns of Enterprise Application Architecture](https://www.martinfowler.com/books/eaa.html) in the mid-2000s. One of the aspects which first drew me to Ruby, via Rails, was the in-depth adoption of so many of these patterns and how easy it is to write elegant Ruby code using OOP (Object-Oriented Programming) design patterns.
