@@ -25,7 +25,7 @@ In other words, a simple app that you build with Roda is indeed _very_ simple.
 
 In fact, the simplest Roda application can [fit into a single file](http://roda.jeremyevans.net/rdoc/files/README_rdoc.html#label-Usage). That's how easy it is to get started with Roda. And I love that because so much of my mindset these days, so much of my ethos as a web developer, is trying to find or build tools which are fascinatingly simplistic at first glance. _How close can we get to a small file with a little bit of code in it?_ Maybe that's all you need to do. 😄
 
-I think some of my take on this is born from seeing such momentum in other ecosystems. Over in the world of JavaScript, you'll quicly discover a shiny new concept called **serverless functions** which has taken quite a hold in the minds of web developers. If all you need to do is something very straightforward—an API with a couple of routes perhaps—you can write a couple of functions and deploy those files somewhere relevant like Netlify and boom, it just works. You don't really have to think about it. You don't have to think about stacks and architectures and all these different considerations upfront.
+I think some of my take on this is born from seeing such momentum in other ecosystems. Over in the world of JavaScript, you'll quickly discover a shiny new concept called **serverless functions** which has taken quite a hold in the minds of web developers. If all you need to do is something very straightforward—an API with a couple of routes perhaps—you can write a couple of functions and deploy those files somewhere relevant like Netlify and boom, it just works. You don't really have to think about it. You don't have to think about stacks and architectures and all these different considerations upfront.
 
 What _I don't like_ about serverless functions though is it's really unclear to me how you move up from there. Sure, the barrier to entry is indeed very low, but how do you grow your architecture into to a much more complicated, fullstack framework approach? And then how portable is that across different platforms and across different kinds of setups? As many of us Rubyists have seen, JavaScript projects tend to mushroom in tooling configuration and build complexity at an alarming rate.
 
@@ -37,7 +37,7 @@ Before continuing to describe Roda, it should be noted that there's another popu
 
 Whereas Roda is intended to take you all the way from greenfield starter projects to at least mid-sized, fully-featured web applications. Jeremy Evans has stated as such in the interviews and presentations he's given. You don't have to jump ship all of a sudden as your app grows and say, "oh no, I can't use Roda anymore. My application is too complicated. I need to go reach for something else!" And if you do end up needing to switch frameworks as the project grows, that would likely be considered something to fix in Roda's feature set and not at all expected.
 
-### A Plugin Architecture So Straightfoward, You'll _Want_ to Write Your Own
+### A Plugin Architecture So Straightforward, You'll _Want_ to Write Your Own
 
 Another aspect of Roda I really love is the plugin architecture. It's very straightforward. You can start writing your own plugins right away, _and you probably will_. Unlike with Rails where I feel like writing a plugin or a gem, well it's all a bit messy and complicated. I've worked on Rails engines—I've looked into how other people have written them, I've played around with all this stuff over the years—and sure, I can get it to work in the end but I never feel particularly satisfied with the effort.
 
@@ -45,7 +45,7 @@ Roda's plugin architecture—while encompassing fewer aspects of your overall st
 
 The benefit here is, the more simple it is to get started writing a plugin, _the more likely you're actually going to do it_. I have a sense that more people who use Roda will end up writing their own Roda plugins, as compared to people using Rails writing their own Rails plugins. I don't have any hard proof of that, it's just my take on the matter having used Rails heavily for well over a decade.
 
-## Y U No Like Rails?
+### Y U No Like Rails?
 
 Speaking of Rails…why even look farther afield at a toolkit like Roda? Why not just stick with Rails and the "Rails way"? Why not just continue to be a Rails developer ? I know Rails up, down, and sideways by now. Why not just keep playing in that sandbox?
 
@@ -123,4 +123,6 @@ I do fervently believe however there are other classes of applications, particul
 
 (However, if you're looking to build a straight-up SaaS app or platform for a well-defined industry…**Rails**. Always…and maybe forever. For what Rails is best at, **it remains the undefeated champion**.)
 
-Whichever framework you end up using, at the end of the day **I hope it's built on top of Ruby**. That's always the primary consideration for me. Over time, it's not that I want to see Roda "supplant" Rails and or even take a larger slice of the same-sized pie. **I want to see Roda (and Bridgetown too) help grow the pie entirely.** I want to see Ruby-based technologies reach into farther corners of the overall web industry. I believe it's possible. Do you? {%= ruby_gem %}
+Whichever framework you end up using, at the end of the day **I hope it's built on top of Ruby**. That's always the primary consideration for me. Over time, it's not that I want to see Roda "supplant" Rails and or even take a larger slice of the same-sized pie. **I want to see Roda (and Bridgetown too) help grow the pie entirely.** I want to see Ruby-based technologies reach into farther corners of the overall web industry.
+
+I believe it's possible. Do you? {%= ruby_gem %}
