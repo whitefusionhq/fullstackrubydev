@@ -310,10 +310,10 @@ bulma@^0.9:
   resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.9.0.tgz#948c5445a49e9d7546f0826cb3820d17178a814f"
   integrity sha512-rV75CJkubNUroAt0qCRkjznZLoaXq/ctfMXsMvKSL84UetbSyx5REl96e8GoQ04G4Tkw0XF3STECffTOQrbzOQ==
 
-bulmatown@1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/bulmatown/-/bulmatown-1.2.2.tgz#77e026aa22eb75b2e8d6c9ec13bdd7c7a97108e8"
-  integrity sha512-007glTw7MOAA0kr4UBYLx8+CY69EcWbn4WU6LzIG5VHBkyRfZR7c5pj8NyZ55jrTtbqp9iQMMd+rYPDEtZXJmQ==
+bulmatown@1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/bulmatown/-/bulmatown-1.2.3.tgz#220e64e24724f736094d631bba5c80d78a362ed8"
+  integrity sha512-naC+YnOGFnfQ3Xko8SheN/vr2izI956XjwosMptFu5Mcb4hPHGy+c7B9C/Y9BBFK/aFaT9eDJK4lMt0PLcll+g==
   dependencies:
     bridgetown-quick-search "^1.1.3"
     bulma "^0.9"
