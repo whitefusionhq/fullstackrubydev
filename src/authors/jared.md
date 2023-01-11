@@ -3,7 +3,7 @@ layout: page
 title: Articles by Jared
 ---
 
-Hi, I'm Jared! I help maintain Ruby open source software like [Bridgetown](https://www.bridgetownrb.com) and [Ruby2JS](https://github.com/rubys/ruby2js), and I work as a consultant with [Whitefusion](https://www.whitefusion.studio). **Fullstack Ruby** is my pet project. ☺ Find me on Twitter [@jaredcwhite](https://twitter.com/jaredcwhite){:rel="noopener"}.
+Hi, I'm Jared! I help maintain Ruby open source software like [Bridgetown](https://www.bridgetownrb.com) and [Ruby2JS](https://github.com/rubys/ruby2js), and I work as a consultant with [Whitefusion](https://www.whitefusion.studio). **Fullstack Ruby** is my pet project. ☺ Find me on Mastodon [@jaredwhite@indieweb.social](https://indieweb.social/@jaredwhite){:rel="noopener"}.
 {: .has-text-centered}
 
 ----

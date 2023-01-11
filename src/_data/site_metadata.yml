@@ -5,6 +5,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Futuristic #WebDev That’s Fast and Fun. => Hashrocket into the future every week and become a wiz at this delightful and powerful language.
 
 twitter: fullstack_ruby
+mastodon: fullstackruby
 
 bulmatown_theme:
   image_sizes:
