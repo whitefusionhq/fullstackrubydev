@@ -8,7 +8,6 @@ output
 # Dependency folders
 node_modules
 bower_components
-vendor
 
 # Caches
 .sass-cache
