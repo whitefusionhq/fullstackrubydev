@@ -135,7 +135,8 @@ button, .button, input {
 main {
   max-inline-size: var(--wlm-max-prose-inline-size);
   min-height: calc(100vh - 300px);
-  padding: var(--wlm-grid-row-spacing);
+  padding-inline: var(--wlm-grid-row-spacing);
+  padding-block: calc(var(--wlm-section-spacing) - var(--size-4));
   background: var(--wlm-section-background);
   border-radius: var(--wlm-section-border-radius);
 }
