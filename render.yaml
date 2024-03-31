@@ -8,6 +8,8 @@ services:
     envVars:
       - key: BRIDGETOWN_ENV
         value: production
+      - key: NODE_VERSION
+        value: 21
     routes:
       - type: redirect
         source: /podcast
