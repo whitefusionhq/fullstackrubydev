@@ -6,5 +6,7 @@
 
 <link rel="stylesheet" href="<%= asset_path :css %>" />
 <script src="<%= asset_path :js %>" defer></script>
-
+<% if Bridgetown.env.production? %>
+<script defer data-domain="fullstackruby.dev" src="https://plausible.io/js/script.js"></script>
+<% end %>
 <%= live_reload_dev_js %>

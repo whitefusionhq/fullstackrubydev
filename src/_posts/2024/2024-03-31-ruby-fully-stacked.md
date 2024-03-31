@@ -10,7 +10,7 @@ This is a comeback story of sorts for **Fullstack Ruby**, but it's more than tha
 
 I'll spare you the intimate details of my serious Ruby-flavored burnout in the back half of 2023—if you really care to [you can read up on it here](https://www.bridgetownrb.com/future/road-to-bridgetown-2.0-escaping-burnout/) as part of the Bridgetown 2.0 kickoff announcement. (_Did I mention I'm hard on work on the next version of Bridgetown?_ 😁)
 
-**TL;DR:** Got thoroughly bummed about the state of the Rails & Turbo ecosystems due to a long series of epic fails (in this author's opinion) on the part of DHH and the cult of personality surrounding him which should have resulted in his ouster but instead seemed to cause Rails/Turbo to slide into yet more sorta-mostly-but-not-really-open-source insularity.
+**TL;DR:** I got thoroughly bummed about the state of the Rails & Turbo ecosystems due to a long series of epic fails (in this author's opinion) on the part of DHH and the cult of personality surrounding him which should have resulted in his ouster but instead seemed to cause Rails/Turbo to slide into yet more sorta-mostly-but-not-really-open-source insularity.
 
 I mean, if I'm going to choose to continue working in a language community that is already niche (let's face it, no matter _how much you love Ruby in 2024_, it's a niche language at this point in its history), do I really want to bolster behavior I find extremely offensive? It makes no sense. I'm no real fan of TypeScript and the state of fullstack JS frameworks, but gosh darnnit I might as well just go full _dark side_ if I'm unable to identify with a community I truly enjoy and respect.
 
