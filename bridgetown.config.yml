@@ -1,0 +1,8 @@
+url: "https://www.fullstackruby.dev"
+permalink: pretty
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/fullstack_ruby_icon.png

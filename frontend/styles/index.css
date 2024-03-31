@@ -1,0 +1,6 @@
+/* Import the base Shoelace stylesheet: */
+@import "@shoelace-style/shoelace/dist/themes/light.css";
+/* @import "./fonts.css"; */
+@import url(https://fonts.bunny.net/css?family=overpass:400,400i,700,700i|overpass-mono:400,700|fugaz-one:400);
+@import "./variables.css";
+@import "./global.css";

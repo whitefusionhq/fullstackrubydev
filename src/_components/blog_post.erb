@@ -1,0 +1,44 @@
+<article<% if post_level == :h1 %> data-pagefind-body<% end %>>
+  <<%= post_level %> class="post-title">
+    <% if post.data.link_url %>
+      <a href="<%= post.data.link_url %>" target="_blank">
+        <%= post.data.title %>
+        <sl-icon library="remixicon" name="System/external-link-fill" style="color: var(--logo-color)"></sl-icon>
+      </a>
+    <% else %>
+      <a href="<%= post.relative_url %>"><%= post.data.title %></a>
+    <% end %>
+  </<%= post_level %>>
+
+  <p class="post-metadata">
+    <time datetime="<%= post.date.to_time.utc.iso8601 %>"><%= post.date.strftime("%B %-d, %Y") %></time>
+    &nbsp;
+    <a href="<%= post.absolute_url %>" style="text-decoration:none">
+      <sl-icon library="remixicon" name="Editor/link-m"></sl-icon>
+      Permalink
+    </a>
+  </p>
+
+  <% unless post.data.image.end_with?("fullstack_ruby_icon.png") %>
+    <figure>
+      <img src="<%= post.data.image %>" medium-height />
+      <% if post.data.image_credit && !keep_reading %>
+        <figcaption>Credit: <a href="<%= post.data.image_credit.url %>" target="_blank"><%= post.data.image_credit.label %></a></figcaption>
+      <% end %>
+    </figure>
+  <% end %>
+
+  <%= content %>
+  <% if keep_reading %>
+    <p><a href="<%= post.relative_url %>">Keep reading…</a></p>
+  <% else %>
+    <p class="post-metadata post-topics">
+      Topic<%= "s" if post.taxonomies.category.terms.length > 1 %>:
+      <% post.taxonomies.category.terms.each do |term| %>
+        <a href="/topics/<%= slugify(term.label) %>" style="font-weight: bold; padding-inline: var(--size-1)">
+        <%= term.label %>
+        </a>
+      <% end %>
+    </p>
+  <% end %>
+</article>

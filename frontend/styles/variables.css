@@ -1,0 +1,68 @@
+:root {
+  /* color-scheme: light dark; */
+
+  --wlm-body-background: oklch(96.88% 0.0939 105);
+  --wlm-action-color: #8a1024;
+  --wlm-action-color-hover: #c01431;
+  --wlm-action-color-faded: #ec8d9d;
+  --wlm-section-border-radius: 3px;
+  --wlm-heading-color: black;
+  --wlm-heading-1-font-size: clamp(2.25rem,9.5vw,3.5rem);
+  --wlm-body-font-size: 115%;
+  --wlm-prose-link-underline-offset: 0.225em;
+
+  --logo-color: #fb7655;
+  --logo-color-hover: #ff997f;
+  --font-sans: Overpass, sans-serif;
+  --font-serif: "Fugaz One", display;
+
+  --code-background-color: color-mix(in srgb, var(--gray-1), transparent 50%);
+  --code-text-color: black;
+}
+
+/* Pagefind overrides */
+
+aside[slot="sidebar-intro"] {
+  --pagefind-ui-font: var(--font-sans);
+  --pagefind-ui-text: var(--wlm-prose-color);
+  --pagefind-ui-border: var(--wlm-action-color-faded);
+  --pagefind-ui-scale: 0.75;
+}
+
+@media (width <= 767px) {
+  :root {
+    --wlm-body-font-size: 100%;
+  }
+}
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --wlm-body-background: #0c0924;
+    --wlm-section-background: #09071d;
+    --wlm-prose-color: var(--gray-5);
+    --wlm-action-color: #f5496f;
+    --wlm-heading-color: var(--gray-1);
+    --wlm-action-color-faded: oklch(42.43% 0.187 354.66);
+    --wlm-action-color-hover: oklch(70.92% 0.2251 12.18);
+    --code-background-color: var(--wlm-body-background);
+    --code-text-color: var(--gray-3);
+  }
+
+  aside[slot="sidebar-intro"] {
+    --pagefind-ui-primary: white;
+    --pagefind-ui-background: var(--wlm-body-background);
+  }
+
+  :where(button) {
+    --wlm-action-color: var(--wlm-action-color-faded);
+  }
+
+  :where(input) {
+    background: transparent;
+  }
+
+  :where(em, strong, q, blockquote, input) {
+    color: var(--gray-4); * lighten it up a bit! *
+  }
+}
+*/

@@ -1,0 +1,20 @@
+<%= dsd do %>
+  <slot name="skip-content"></slot>
+
+  <nav-bar>
+    <slot name="header"></slot>
+    <slot name="navbar"></slot>
+  </nav-bar>
+
+  <main-grid>
+    <slot name="sidebar-intro" style="grid-area: intro"></slot>
+    <slot style="grid-area: main"></slot>
+    <slot name="sidebar-links" style="grid-area: links"></slot>
+  </main-grid>
+
+  <slot name="footer"></slot>
+
+  <%= dsd_style %>
+<% end %>
+
+<%= content %>

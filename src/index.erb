@@ -1,0 +1,48 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+
+layout: default
+paginate:
+  collection: posts
+---
+
+<h1 style="margin-block-end: var(--size-fluid-5)">
+  <% if paginator.page == 1 %>
+    “bundle list”
+  <% else %>
+    Archive – Page <%= paginator.page %>
+  <% end %>
+</h1>
+
+<% paginator.resources.each_with_index do |post, index| %>
+  <% if index > 0 %>
+    <br /><br />
+  <% end %>
+
+  <%= render(BlogPost.new post: post) { post.content } %>
+<% end %>
+
+<archive-pagination style="
+  margin-block-start: var(--wlm-section-spacing);
+  display: flex;
+  gap: var(--size-4);
+  justify-content: space-between;
+  font-weight: bold;
+">
+  <% if paginator.previous_page %>
+    <a href="<%= paginator.previous_page_path %>">
+      <sl-icon library="remixicon" name="Arrows/arrow-left-circle-fill" style="margin-inline-end: var(--size-2)">
+      </sl-icon>Newer Posts
+    </a>
+  <% else %>
+    <span></span>
+  <% end %>
+
+  <% if paginator.next_page %>
+    <a href="<%= paginator.next_page_path %>">
+      Older Posts<sl-icon library="remixicon" name="Arrows/arrow-right-circle-fill" style="margin-inline-start: var(--size-2)">
+      </sl-icon></a>
+  <% else %>
+    <span></span>
+  <% end %>
+</archive-pagination>
