@@ -7,7 +7,9 @@
     "esbuild": "npm run shoelace:copy-assets && node esbuild.config.js --minify",
     "esbuild-dev": "npm run shoelace:copy-assets && node esbuild.config.js --watch"
   },
-  "devDependencies": {
+  "dependencies": {
+    "@shoelace-style/shoelace": "^2.15.0",
+    "@zachleat/pagefind-search": "^1.0.3",
     "esbuild": "^0.19.2",
     "glob": "^10.3.3",
     "postcss": "^8.4.29",
@@ -16,9 +18,5 @@
     "postcss-load-config": "^4.0.1",
     "postcss-preset-env": "^9.1.2",
     "read-cache": "^1.0.0"
-  },
-  "dependencies": {
-    "@shoelace-style/shoelace": "^2.15.0",
-    "@zachleat/pagefind-search": "^1.0.3"
   }
 }
