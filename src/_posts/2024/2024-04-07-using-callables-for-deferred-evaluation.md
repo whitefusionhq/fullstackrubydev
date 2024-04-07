@@ -240,7 +240,7 @@ MyCallable.(123) # => new instance of MyCallable with @value: 123
 
 I hope you’re starting to get a sense for how understanding the difference between blocks and lambdas—or perhaps we just think of them as “callables”—can help you build more expressive APIs utilizing modular building-blocks which offer deferred evaluation, control flow, and entirely new patterns.
 
-**This is what I love so much about Ruby.** We think of Ruby as a programing language, and it certainly is—and a “high level” one at that with an impressive heaping of abstractions. When “all cylinders are firing”, “programmer happiness” ensues.
+**This is what I love so much about Ruby.** We think of Ruby as a programming language, and it certainly is—and a “high level” one at that with an impressive heaping of abstractions. When “all cylinders are firing”, “programmer happiness” ensues.
 
 But Ruby goes even a step beyond. Because of the expressiveness of the syntax Ruby provides us, we can in a sense _write our own languages_. Our APIs can have an advanced shape, with many affordances people typically assume must be baked into the language itself.
 
