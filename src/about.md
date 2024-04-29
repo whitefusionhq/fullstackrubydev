@@ -18,7 +18,7 @@ The modern tools & techniques available to Rubyists today aren't just for the ba
 
 ## About Jared 
 
-Howdy, I'm [Jared White](https://jaredwhite.com)! I'm currently loving life in the Pacific Northwest 🌲 and building the next version of [Bridgetown](https://www.bridgetownrb.com), a "vanilla-first" progressive site generator & fullstack framework, powered by Ruby, Roda, & esbuild.
+Howdy! I'm [Jared White](https://jaredwhite.com). I'm currently loving life in the Pacific Northwest 🌲 and building the next version of [Bridgetown](https://www.bridgetownrb.com), a "vanilla-first" progressive site generator & fullstack framework—powered by Ruby, Roda, & esbuild.
 
 I care about expanding the influence of the "alt Ruby" community (aka the world of frameworks outside of a certain train-themed behemoth 😉) AND promoting the values of vanilla-first, HTML-first web development. Besides my work here at Fullstack Ruby, I've written a course called [CSS Nouveau](https://www.spicyweb.dev/css-nouveau) and run a [lively Discord server](https://www.spicyweb.dev) all about getting back to frontend basics.
 
