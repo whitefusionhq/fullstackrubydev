@@ -4,5 +4,5 @@ title: Articles
 exclude_from_search: true
 ---
 
-You can find articles now on the [home page](/). Cheers!
+You can now find the articles list right on the [home page](/). Cheers!
 {:style="text-align:center"}
