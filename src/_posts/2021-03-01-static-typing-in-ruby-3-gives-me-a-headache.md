@@ -74,8 +74,4 @@ So here's my crazy and wacky proposal: **This should all be one tool.** 🤯 I w
 
 I have no idea what it would take for the Ruby core team and the other folks out there building these various tools to get together and hash this all out. But I really hope this story gets a hell of a lot better over the coming months. Because if not…I might just kiss Ruby 3 typing goodbye.
 
-_But not Solargraph._ You'd have to pry that out of my cold dead hands. 😆
-
-### Conclusion?
-
-What are your thoughts concerning Ruby 3 and static typing? Do you think this ecosystem is headed in the right direction? Do you think I'm wrong in promoting code comments as the preferred way to add typing to Ruby? Would you use Solargraph + Sord + Steep if it all worked together seamlessly? [Drop a comment and let me know over at DEV.to!](https://dev.to/jaredcwhite/static-typing-in-ruby-3-gives-me-a-headache-but-i-could-grow-to-like-it-4p7i) {%= ruby_gem %}
+_But not Solargraph._ You'd have to pry that out of my cold dead hands. 😆 {%= ruby_gem %}
