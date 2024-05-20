@@ -68,7 +68,7 @@ end
 
 Courtesy of the reference to `self.class`, now when you run `WorkingHarderClass.new.perform_work`, it will instantiate the correct supporting class, call that object, and return the phrase **"it worked! easy as pie!"**
 
-_**Note:** in an earlier version of this article, I used `self.class.const_get(:ConfigClass)`, but I received feedback the above is an even cleaner approach. 🧹_
+_**Note:** in an earlier version of this article, I used `self.class.const_get(:ConfigClass)`, but I received feedback (thanks [Ryan Davis](https://www.zenspider.com)!) the above is an even cleaner approach. 🧹_
 
 What's also nice about this pattern is you can easily swap out supporting classes on a whim, perhaps as part of testing (automated suite, A/B tests, etc.)
 
