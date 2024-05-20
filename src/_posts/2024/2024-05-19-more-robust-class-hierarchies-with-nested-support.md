@@ -1,5 +1,5 @@
 ---
-date: Sun, 19 May 2024 21:58:00 -0700
+date: Mon, 20 May 2024 07:41:00 -0700
 title: Expressive Class Hierarchies through Dynamically-Instantiated Support Objects
 subtitle: Abstract classes don't always stand alone, but spring to life as a part of an object cluster. Here's how to ensure you're always instantiating the right ones.
 categories:
