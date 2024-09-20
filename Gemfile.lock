@@ -91,11 +91,11 @@ GEM
     mutex_m (0.2.0)
     net-http (0.4.1)
       uri
-    nio4r (2.7.1)
+    nio4r (2.7.3)
     nokolexbor (0.5.3)
     nokolexbor (0.5.3-arm64-darwin)
     public_suffix (5.0.5)
-    puma (6.4.2)
+    puma (6.4.3)
       nio4r (~> 2.0)
     rack (3.0.10)
     rake (13.2.1)
