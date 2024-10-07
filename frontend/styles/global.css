@@ -258,3 +258,13 @@ article img {
 .skip-to-content-link:focus {
   transform: translateY(0%);
 }
+
+.heading-anchor {
+  position: absolute;
+  padding-left: var(--size-2);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+:is(h2:hover, h3:hover) .heading-anchor, .heading-anchor:focus {
+  opacity: 1;
+}
