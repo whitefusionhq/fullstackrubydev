@@ -114,4 +114,4 @@ There have been other solutions like this out there for quite a long time, most 
 
 ---
 
-So there you have it folks: my top ~~10~~ 11 favorite gems which are useful across many variations of Ruby web applications. Which ones have you used? What are your favorites? Do you have additional suggestions of gems to cover in a follow-up? [Head over to Mastodon](https://ruby.social/@fullstackruby) and let me know your thoughts!
+So there you have it folks: my top ~~10~~ 11 favorite gems which are useful across many variations of Ruby web applications. Which ones have you used? What are your favorites? Do you have additional suggestions of gems to cover in a follow-up? [Head on over to Mastodon](https://ruby.social/@fullstackruby/113267337265299335) and let me know your thoughts!
