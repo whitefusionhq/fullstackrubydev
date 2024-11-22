@@ -5,7 +5,7 @@ subtitle: How to rerender specific parts of a website based on the dependency gr
 category: Jamstack Frameworks
 ---
 
-As the lead maintainer of the [Bridgetown web framework](https://www.bridgetownrb.com), I get work on interesting (and sometimes very thorny!) Ruby problems which veer from what is typical for individual application projects.
+As the lead maintainer of the [Bridgetown web framework](https://www.bridgetownrb.com), I get to work on interesting (and sometimes very thorny!) Ruby problems which veer from what is typical for individual application projects.
 
 With version 2 of Bridgetown about to drop, I’m starting a series of articles regarding intriguing aspects of the framework’s internals. This time around, we’re taking a close look at one of the marquee features: **Fast Refresh**.
 
