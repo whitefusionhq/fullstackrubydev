@@ -52,7 +52,6 @@ But again, my assertion is that most applications would be better served if they
 <aside markdown="1">
 As an appropriate aside, this is why I enjoy programming **Ruby** above all else. The Ruby language makes it pleasurable for me to gain an intuitive sense of a fullstack system and how everything operates. I enjoy reading Ruby almost as much as I enjoy writing it! I wouldn't say that about many other languages. Most programming languages look fiddly and ugly to me, as if it's just line after line of brute-force trying to get the computer to do its tedious little computer-y things. I don't want that. 😅 I want high-level patterns and paradigms and DSLs and declarative syntax and all the rest. Put more responsibility on the computer to figure out the little details under the hood. /rant
 </aside>
-{:style="font-family: ui-serif, Georgia, serif; padding: 1em"}
 
 ----
 

@@ -28,6 +28,11 @@ pre.highlight {
   overflow: auto;
 }
 
+.highlighter-rouge + p:has(a.button) {
+  text-align: right;
+  margin-block-end: 2em;
+}
+
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .language-js .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */

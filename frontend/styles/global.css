@@ -238,6 +238,11 @@ article img {
   max-inline-size: 100%;
 }
 
+article > aside {
+  font-family: ui-serif, Georgia, serif;
+  padding-inline: 1em;
+}
+
 .skip-to-content-link {
   background: var(--wlm-action-color);
   color: white;
