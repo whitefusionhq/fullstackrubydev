@@ -35,3 +35,4 @@ yarn-debug.log*
 .yarn-integrity
 
 src/shoelace-assets
+tmp

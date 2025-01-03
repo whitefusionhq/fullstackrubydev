@@ -11,15 +11,25 @@ Bridgetown.configure do |config|
   init :"bridgetown-feed"
   init :"bridgetown-seo-tag"
 
-  # TODO: fix this bug!
-  keep_files ["_bridgetown", "pagefind"]
+  keep_files ["pagefind"]
 
-  # hook :site, :fast_refresh do |site|
-  #   site.data._skip_pagefind = true
-  # end
+  collections do
+    cheat_sheets do
+      output true
+      permalink "/cheat-sheets/:slug.*"
+      relations do
+        has_many "cheat_entries"
+      end
+    end
+    cheat_entries do
+      output false
+      relations do
+        belongs_to "cheat_sheet"
+      end
+    end
+  end
 
   skip_pagefind_write = false
-  # TODO: why are hooks not getting block params ??!!?!!?!
   hook :site, :post_write do |site|
     next if config.fast_refresh && skip_pagefind_write
     skip_pagefind_write = true

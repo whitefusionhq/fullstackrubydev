@@ -1,0 +1,78 @@
+/* Based on Open Props Normalize */
+
+:where(table) {
+  --table-border-radius: calc(var(--wlm-section-border-radius) * 2);
+
+  width: 100%;
+  border: 1px solid var(--wlm-surface-2);
+  background: var(--wlm-surface-2);
+  border-radius: var(--table-border-radius);
+
+  --table-inner-radius: calc(var(--table-border-radius) - 2px);
+}
+
+:where(table:not(:has(tfoot)) tr:last-child td:first-child) {
+  border-end-start-radius: var(--table-inner-radius);
+}
+
+:where(table:not(:has(tfoot)) tr:last-child td:last-child) {
+  border-end-end-radius: var(--table-inner-radius);
+}
+
+:where(table thead tr:first-child th:first-child) {
+  border-start-start-radius: var(--table-inner-radius);
+}
+
+:where(table thead tr:first-child th:last-child) {
+  border-start-end-radius: var(--table-inner-radius);
+}
+
+:where(tfoot tr:last-child :is(th,td):first-of-type) {
+  border-end-start-radius: var(--table-inner-radius);
+}
+
+:where(tfoot tr:last-child :is(th,td):last-of-type) {
+  border-end-end-radius: var(--table-inner-radius);
+}
+
+:where(th) {
+  font-weight: bold;
+  background-color: var(--wlm-surface-2);
+}
+
+:where(table :is(a, button, [contenteditable]):is(:focus-visible)) {
+  outline-offset: -2px;
+}
+
+:where(td) {
+  background: var(--wlm-surface-1);
+  max-inline-size: var(--size-content-2);
+  text-wrap: pretty;
+}
+
+:where(td,th) {
+  text-align: left;
+  padding: var(--size-2);
+}
+
+:where(thead) {
+  border-collapse: collapse;
+}
+
+:where(table tr:hover td),
+:where(tbody tr:nth-child(even):hover td) {
+  background-color: var(--wlm-action-color-faded);
+
+  @media (prefers-color-scheme: light) {
+    background-color: white;
+  }
+}
+
+:where(table > caption) {
+  margin: var(--size-3);
+}
+
+:where(tfoot button) {
+  padding-block: var(--size-1);
+  padding-inline: var(--size-3);
+}
