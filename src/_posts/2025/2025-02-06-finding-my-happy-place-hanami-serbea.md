@@ -76,4 +76,4 @@ Hmm. 🤨
 
 {% endraw %}
 
-Anyway, I'm totally jazzed that I got **Hanami** and **Serbea** playing nicely together, and I can't wait to see what I might try building next in Hanami! This will be an ongoing series here on **Fullstack Ruby** (loosely titled "Jared Tries to Do Unusual Things with Hanami"), so make sure that you [follow us on Mastodon](https://ruby.social/@fullstackruby) and subscribe to the newsletter to keep abreast of further developments. {%= ruby_gem %}
+Anyway, I'm totally jazzed that I got **Hanami** and **Serbea** playing nicely together, and I can't wait to see what I might try building next in Hanami! This will be an ongoing series here on **Fullstack Ruby** (loosely titled "Jared Tries to Do Unusual Things with Hanami"), so make sure that you [follow us on Mastodon](https://ruby.social/@fullstackruby) and [subscribe to the newsletter](/about) to keep abreast of further developments. {%= ruby_gem %}

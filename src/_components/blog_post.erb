@@ -11,7 +11,7 @@
   </<%= post_level %>>
 
   <p class="post-metadata">
-    <time datetime="<%= post.date.to_time.utc.iso8601 %>"><%= post.date.strftime("%B %-d, %Y") %></time>
+    <time datetime="<%= post.date.iso8601 %>"><%= post.date.strftime("%B %-d, %Y") %></time>
     &nbsp;
     <a href="<%= post.absolute_url %>" style="text-decoration:none">
       <sl-icon library="remixicon" name="Editor/link-m"></sl-icon>
