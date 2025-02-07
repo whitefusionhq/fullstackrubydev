@@ -5,7 +5,7 @@ subtitle: I figured it was high time I took Hanami for a spin with all the news 
 category: Hanami
 ---
 
-It sure seems like the [Hanami web framework](https://hanamirb.org) been in the news lately, most notably the announcement that Mike Perham of [Sidekiq](https://sidekiq.org) fame [has provided a $10,000 grant to Hanami](https://www.mikeperham.com/2025/01/17/sponsoring-hanami/) to keep building off the success of version 2.2. I also deeply appreciate Hanami's [commitment to fostering a welcoming and inclusive community](https://hanamirb.org#our-community-values#:~:text=Our community values).
+It sure seems like the [Hanami web framework](https://hanamirb.org) has been in the news lately, most notably the announcement that Mike Perham of [Sidekiq](https://sidekiq.org) fame [has provided a $10,000 grant to Hanami](https://www.mikeperham.com/2025/01/17/sponsoring-hanami/) to keep building off the success of version 2.2. I also deeply appreciate Hanami's [commitment to fostering a welcoming and inclusive community](https://hanamirb.org#our-community-values#:~:text=Our community values).
 
 Thus I figured it was high time I took Hanami for a spin, so after running `gem install hanami`, along with a few setup commands and a few files to edit, I had a working Ruby-powered website running with Hanami! **Yay!!** 🎉
 
