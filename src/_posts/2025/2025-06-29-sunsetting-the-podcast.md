@@ -20,11 +20,11 @@ There are _two devastating downward pressures_ on the software industry right no
 
 Unfortunately, the Ruby community taken as a whole has done NOTHING to fight these problems. Certain individuals have, yes. Good for them. It's not moving the needle though.
 
-Ruby already has suffered in recent years from the brain-drain problem and the lack of mainstream awareness for new project development. I have always felt that problem alone is one we can surmount. But when you pile on top of that the **fascism problem** (personified in the founder & figurehead of Ruby on Rails, DHH) and the **AI problem** (which major voices in the Ruby space have not only failed to combat but _they're actively advocating for and encouraging_ genAI use), I find myself unable to remain a cheerleader for this community going forward.
+Ruby already has suffered in recent years from the brain-drain problem and the lack of mainstream awareness for new project development. I have always felt that problem alone is one we can surmount. But when you pile on top of that the **fascism problem** (personified in the founder & figurehead of Ruby on Rails, DHH) and the **AI problem** (which major voices in the Ruby space have not only failed to combat but _they're actively advocating for and encouraging_ genAI use), I find it increasingly difficult to remain an active cheerleader going forward.
 
 Don't get me wrong, I'm not saying it's any better per se in other programming language communities. But if I have to deal with fighting off fascism and the evils of Big Tech on a daily basis, I might as well be writing JavaScript while I'm doing it. JavaScript is the lingua franca of the web. It just is. And it's already what we use for frontend, out of technical necessity.
 
-**I still prefer writing Ruby on the backend.** I do, I really do! And I'm not sure yet I'm ready to give that up, even now. But it does mean I find my enthusiasm for talking about Ruby and recommending it to others fading quickly into the background. Damn.
+**I still prefer writing Ruby on the backend.** I do, I really do! And I'm not sure yet I'm ready to give that up, even now. But it does mean I find my enthusiasm for talking about Ruby and recommending it to others fading into the background. Damn.
 
 ----
 
